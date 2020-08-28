@@ -16,3 +16,4 @@
 ```
 ![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=URL_OF_PUML_SOURCE
 ```
+![Markdown Here logo](https://raw.github.com/adam-p/markdown-here/master/src/common/images/icon48.png)
