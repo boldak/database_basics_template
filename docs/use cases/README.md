@@ -6,7 +6,7 @@
 
 *Вбудовування зображень діаграм здійснюється з використанням сервісу plantuml.com. Сервіси взаємодіють так, як зобраажено на діаграмі нижче.*
 
-[uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/boldak/database_basics_template/master/example.puml
+[](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/boldak/database_basics_template/master/example.puml)
 
 *Для вбудовування необхідно використовувати:*
 ```
@@ -16,4 +16,3 @@
 ```
 ![uncached image](http://www.plantuml.com/plantuml/proxy?cache=no&src=URL_OF_PUML_SOURCE
 ```
-![Markdown Here logo](https://raw.github.com/adam-p/markdown-here/master/src/common/images/icon48.png)
