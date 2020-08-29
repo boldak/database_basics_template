@@ -33,7 +33,7 @@
 
 **Структура документів:**
 
-Дивись у (../docs/requirements/state-of-art.md) та (../docs/requirements/stakeholders-needs.md).  
+Дивись у ["Аналіз предметної області"](../docs/requirements/state-of-art.md) та ["Запити зацікавлених осіб"](../docs/requirements/stakeholders-needs.md).  
 
 **Завдання:**
 
