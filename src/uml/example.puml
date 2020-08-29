@@ -2,11 +2,11 @@
 Actor User
 participant github
 participant plantuml.com
-User -> github: View "file_with_uml".md
-github --> User: Rendered HTML with <img> tag 
-User -> plantuml.com: Request plantuml proxy
-plantuml.com -> github: Get puml source
-github --> plantuml.com : Return puml source
-plantuml.com -> plantuml.com: Render diagram
-plantuml.com --> User: Return png view of diagram 
+User -> github: Перегляд "file_with_uml".md
+github --> User: Візуалізований HTML з тегом <img> 
+User -> plantuml.com: Запит до plantuml proxy
+plantuml.com -> github: Запит на отримання опису діаграми
+github --> plantuml.com : Опис діаграми (puml) 
+plantuml.com -> plantuml.com: Візуалізація діаграми
+plantuml.com --> User: Зображення діаграми в форматі png 
 @enduml
