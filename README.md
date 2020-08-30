@@ -7,3 +7,5 @@
 проекту, контактні дані виконавців.*
 
 [Теми проєктів](./guidelines/themes.md)
+
+[Методичні вказівки](./guidelines/guidelines.md)
