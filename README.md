@@ -9,6 +9,7 @@
 - Dmitriy Uvin (Telegram - @dmitriyuvin)
 - Illya Alexeevich (Gmail - Flimka134@gmail.com)
 - Rostyslav Nakarlovich (Telegram - @Zvesdochyot)
+- Pavlo Skvortsov (Telegram - @p_skv)
 
 [Теми проєктів](./guidelines/themes.md)
 
