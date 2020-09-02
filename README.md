@@ -9,7 +9,7 @@
 - Dmitriy Uvin (Telegram - @dmitriyuvin)
 - Illya Alexeevich (Gmail - Flimka134@gmail.com)
 - Rostyslav Nakarlovich (Telegram - @Zvesdochyot)
-- Kirill Salun (kaeviane@gmail.com)
+- Kirill Salun (Gmail - kaeviane@gmail.com)
 
 [Теми проєктів](./guidelines/themes.md)
 
