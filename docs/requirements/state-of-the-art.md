@@ -22,7 +22,9 @@
 - *Reliability (вимоги до надійності)*
 - *Performance (вимоги до продуктивності)*
 - *Supportability (вимоги до підтримки)*
-vvvv
+
+
+ #### Таблиця порівнянь
 | Критерії/сервіси | Gapminder | The World Bank DataBank| Google Public Data Explorer |  Statistics Poland | Eurostat
 | :--------------: | :----: | :------: |  :------: 	 |:------:|   :------: 	|
 | Зручний онлайн-доступ 			                  | ✓ | ✓ | ✓ | ✓ | ✓ |
