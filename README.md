@@ -6,12 +6,6 @@
 
 # Контактні дані виконавців
 
-..* 1
-..* 2
-..* 3
-
-[Теми проєктів](./guidelines/themes.md)
-
-[Методичні вказівки](./guidelines/guidelines.md)
-
-[Звітність](https://docs.google.com/spreadsheets/d/1ePb9OBB7ox0E5-GAh2r6ZU3j--PpAROCUfqzA17kL20/edit?usp=sharing)
+* 1
+* 2
+* 3
