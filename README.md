@@ -16,19 +16,19 @@
 
 Учасники проекту:
 
-[Гайдукевич Марія](https://github.com/matyyaa)
+[Гайдукевич Марія] (https://github.com/matyyaa)
 
-[Гаргаєв Кирило](https://github.com/KirillGargaiev)
+[Гаргаєв Кирило] (https://github.com/KirillGargaiev)
 
-[Злочеський Нікіта](https://github.com/NoWhaler)
+[Злочеський Нікіта] (https://github.com/NoWhaler)
 
-[Копайло Ярослав](https://github.com/Yarl745)
+[Копайло Ярослав] (https://github.com/Yarl745)
 
-[Коптюх Назар](https://github.com/GrossmasterGod)
+[Коптюх Назар] (https://github.com/GrossmasterGod)
 
-[Поморова Марія](https://github.com/masha-pmrv)
+[Поморова Марія] (https://github.com/masha-pmrv)
 
-[Хоменко Олег](https://github.com/Oleh-Khomenko)
+[Хоменко Олег] (https://github.com/Oleh-Khomenko)
 
-[Юзина Сергій](https://github.com/Brimingthon)
+[Юзина Сергій] (https://github.com/Brimingthon)
 
