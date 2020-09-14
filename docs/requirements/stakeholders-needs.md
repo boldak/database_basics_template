@@ -48,8 +48,8 @@
 ***НАЗВА: Progmark***
     
 ***УЧАСНИКИ:***
-  - Vitaly Hutov: fake.gutov@gmail.com
-  - Vitaly Derachyts: vide.the.magician8@gmail.com
+  - Vitalii Hutov: fake.gutov@gmail.com
+  - Vitalii Derachyts: vide.the.magician8@gmail.com
   - Anna Ivankova: ann.ivankova.02@gmail.com
   - Volodymyr Karamshuk: qazse97@ukr.net
   - Ivan Kucherenko: indigo.dingo254@gmail.com
