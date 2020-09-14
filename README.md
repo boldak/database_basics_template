@@ -1,4 +1,4 @@
-# Project managment system
+# Progmark
 
 
 ## Contributors
