@@ -20,4 +20,4 @@
 
 ## Основні визначення
 
-<a href="url"><https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1_UA_Project_Management_%28phases%29.png/540px-1_UA_Project_Management_%28phases%29.png>
+<a href="url"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/1_UA_Project_Management_%28phases%29.png/540px-1_UA_Project_Management_%28phases%29.png"></a>
