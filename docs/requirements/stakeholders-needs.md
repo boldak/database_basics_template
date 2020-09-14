@@ -32,7 +32,9 @@
 
 ### Посилання
 
-*[Розділ містить повний список всіх документів, про які згадується.]*
+- https://stud.com.ua/23749/menedzhment/merezheviy_metod_planuvannya
+- https://pidru4niki.com/1776100753535/menedzhment/metodi_sitovogo_planuvannya_perevagi_nedoliki
+- https://support.microsoft.com/uk-ua/office/%D0%B2%D1%96%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D0%B6%D0%B5%D0%BD%D0%BD%D1%8F-%D0%BA%D1%80%D0%B8%D1%82%D0%B8%D1%87%D0%BD%D0%BE%D0%B3%D0%BE-%D1%88%D0%BB%D1%8F%D1%85%D1%83-%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D1%83-%D0%B2-%D1%80%D0%BE%D0%B1%D0%BE%D1%87%D0%BE%D0%BC%D1%83-%D1%81%D1%82%D0%BE%D0%BB%D1%96-project-ad6e3b08-7748-4231-afc4-a2046207fd86
 
 
 ## Короткий зміст
@@ -43,7 +45,7 @@
    
 ***ID: IV-91(4)***
     
-***НАЗВА: Project Managment System***
+***НАЗВА: Progmark***
     
 ***УЧАСНИКИ:***
   - Vitaly Hutov: fake.gutov@gmail.com
