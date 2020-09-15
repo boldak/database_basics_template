@@ -80,6 +80,13 @@
 
 ***ОСНОВНИЙ СЦЕНАРІЙ***</br>
 **РОЛІ:**
+  - Andrii Koreniuk - Tech Lead;
+  - Alexei Krasnovskiy - Developer;
+  - Oleksii Khandeldy - Developer;
+  - Rostislav Ohochyi - Developer;
+  - Valentyn Zhelepa - Developer;
+  - Dmytro Lypchak - Developer;
+  - Vsevolod Mykytenko - Developer.
 
 **ЕТАПИ:**
   - Етап №1. Виявлення вимог до функціональності програми. Розробка запитів зацікавлених осіб.</br>
