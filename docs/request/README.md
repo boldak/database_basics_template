@@ -66,4 +66,4 @@
 * [NLP implementations in other languages](../materials/nlp-practice/NLP%20implementations%20in%20other%20languages.md)
 * [Штучні нейронні мережі для обробки природних мов](../materials/nlp-theory/AI%20in%20NLP.md)
 * [Бібліотеки для синтаксичного аналізу тексту](../materials/nlp-practice/libraries-overview.md)
-* [Теорія графів](../materials/nlp-theory/graphs/Dictionary.md)
+* [Теорія графів](../materials/nlp-theory/graphs/Dictinary.md)
