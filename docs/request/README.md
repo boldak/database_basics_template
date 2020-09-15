@@ -42,7 +42,7 @@
 
 **Слово** — це послідовність морфем, об'єднаних за граматичними правилами певної мови і співвідносних з певним елементом позамовної реальності.
 
-**[Граф](../materials/nlp-theory/graphs/Dictionary.md)** — це сукупність об'єктів із зв'язками між ними.
+**[Граф](../materials/theory/graph.md)** — це сукупність об'єктів із зв'язками між ними.
 
 **Синтаксичний аналіз** — процес аналізу вхідної послідовності символів, з метою розбору граматичної структури згідно із заданою формальною граматикою.
 
@@ -64,7 +64,7 @@
 * [NLP implementations in other languages](../materials/nlp-practice/NLP%20implementations%20in%20other%20languages.md)
 * [Штучні нейронні мережі для обробки природних мов](../materials/nlp-theory/AI%20in%20NLP.md)
 * [Бібліотеки для синтаксичного аналізу тексту](../materials/nlp-practice/libraries-overview.md)
-* [Теорія графів](../materials/nlp-theory/graphs/Dictinary.md)
+* [Теорія графів](../materials/theory/graph.md)
 
 ## 2. Короткий зміст
 
