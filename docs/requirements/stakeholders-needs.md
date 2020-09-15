@@ -38,14 +38,10 @@
 специфікації:*
 
    
-***ID:***
+***ID:*** ***IV-92 (4)***
 
-***IV-92 (4)***
-    
-***НАЗВА:*** 
+***НАЗВА:*** ***ProjectsLab***
 
-***ProjectsLab***
-   
 ***УЧАСНИКИ:***
 
 - Dmitriy Uvin (Telegram - @dmitriyuvin)
