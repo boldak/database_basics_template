@@ -61,7 +61,7 @@
 ### 1.3. Посилання на джерела
 
 * [NLP](https://ru.wikipedia.org/wiki/%D0%9E%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0_%D0%B5%D1%81%D1%82%D0%B5%D1%81%D1%82%D0%B2%D0%B5%D0%BD%D0%BD%D0%BE%D0%B3%D0%BE_%D1%8F%D0%B7%D1%8B%D0%BA%D0%B0)
-* [NLP implementations in other languages](../materials/nlp-practice/NLP%20implementations%20in%20other%20languages.md)
+* [NLP implementations in other languages](../materials/theory/NLP_implemintation.md)
 * [Штучні нейронні мережі для обробки природних мов](../materials/nlp-theory/AI%20in%20NLP.md)
 * [Бібліотеки для синтаксичного аналізу тексту](../materials/nlp-practice/libraries-overview.md)
 * [Теорія графів](../materials/theory/graph.md)
