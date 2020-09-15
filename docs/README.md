@@ -1,6 +1,6 @@
 # Документація
 
-* [Запити зацікавлених осіб](/requirements/stakeholders-needs.md)
+* [Запити зацікавлених осіб](requirements/stakeholders-needs.md)
 * [Теоретичні відомості]
 * [Схема бази даних]
 * [Доповідь]
