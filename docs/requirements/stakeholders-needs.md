@@ -19,10 +19,10 @@
 
 ### Посилання
 
-- [Link 1](http://www.oridu.odessa.ua/7/7/metoduchni-rek/t/02.pdf)
-- [Link 2](https://ela.kpi.ua/bitstream/123456789/19481/1/DMM_UP_2017.pdf)
-- [Link 3](https://github.com/ip-85/robin/blob/master/docs/stakeholders.md#4)
-- [Link 3](http://rayradavn.gov.ua/images/metodychna/zayavka.pdf)
+- [Джерело 1 (oridu.odessa)](http://www.oridu.odessa.ua/7/7/metoduchni-rek/t/02.pdf)
+- [Джерело 2 (ela.kpi)](https://ela.kpi.ua/bitstream/123456789/19481/1/DMM_UP_2017.pdf)
+- [Джерело 3 (gihub.com)](https://github.com/ip-85/robin/blob/master/docs/stakeholders.md#4)
+- [Джерело 4 (rayradavn.gov.ua)](http://rayradavn.gov.ua/images/metodychna/zayavka.pdf)
 
 ## Короткий зміст
 
