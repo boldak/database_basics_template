@@ -7,7 +7,7 @@ AMC(analytics media content)
 
 [Гаргаєв Кирило](https://github.com/KirillGargaiev)
 
-[Злочеський Нікіта](https://github.com/NoWhaler)
+[Злочевський Нікіта](https://github.com/NoWhaler)
 
 [Копайло Ярослав](https://github.com/Yarl745)
 
