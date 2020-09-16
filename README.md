@@ -1,6 +1,6 @@
 # ProjectsLab
 
-Project Operating System. System for projects operating and managment.
+Система управління проектами (СУП). За домогою цієї системи ви зможете зручно керувати своїми проектами та їх розробкою.
 
 ## Contributors
 - Dmitriy Uvin (Telegram - @dmitriyuvin)
