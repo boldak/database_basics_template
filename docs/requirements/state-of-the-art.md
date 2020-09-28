@@ -17,6 +17,7 @@
 
 ### Життєвий цикл даних
 [Життєвий цикл даних](https://pidru4niki.com/11930807/informatika/zhittyeviy_tsikl_danih_zbir_sistematizatsiya_danih) — існування даних, яке починається з моменту їх створення та закінчується моментом їх знищення.
+
 <a href="url"><img src="https://cpb-us-e1.wpmucdn.com/blogs.ntu.edu.sg/dist/0/1024/files/2015/11/Library-Research-Data-Lifecycle-27gd3u3.jpg" height="500" width="500" ></a>
 
 [Data Сreation](https://www.lawinsider.com/dictionary/data-creation) – етап життєвого циклу даних, для якого характерне формування нових даних на основі та із використанням уже існуючих.
