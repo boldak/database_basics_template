@@ -44,7 +44,7 @@
 
 ## Підходи та способи вирішення завдання
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/e-andrew/docs/requirements/graphics/gapminder.PNG" height="660" width="1200" ></a>
+<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/e-andrew/docs/requirements/graphics/gapminder.PNG" height="400" width="800" ></a>
 
 * [Gapminder](https://www.gapminder.org/) 
 
