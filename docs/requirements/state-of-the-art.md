@@ -44,8 +44,6 @@
 
 ## Підходи та способи вирішення завдання
 
-<a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/e-andrew/docs/requirements/graphics/gapminder.PNG" height="400" width="800" ></a>
-
 * [Gapminder](https://www.gapminder.org/) 
 
  Фундація Gapminder є некомерційним підприємством, зареєстрованим в Стокгольмі, Швеція, що сприяє сталому глобальному розвитку та досягненню Цілей розвитку тисячоліття Організації Об'єднаних Націй шляхом розширення використання і розуміння статистичних даних та іншої інформації про соціальний, економічний та екологічний розвиток на місцевому, національному та глобальному рівнях. \
@@ -57,7 +55,7 @@
   
   <hr>
   
-  <a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/e-andrew/docs/requirements/graphics/the_world_bank.PNG" height="400" width="800" ></a>
+  <a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/e-andrew/docs/requirements/graphics/gapminder.PNG" height="400" width="800" ></a>
   
 * [The World Bank DataBank](https://databank.worldbank.org/home.aspx) 
 
@@ -73,7 +71,7 @@
  
  <hr>
  
- <a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/e-andrew/docs/requirements/graphics/google_public_data.PNG" height="400" width="800" ></a>
+ <a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/e-andrew/docs/requirements/graphics/the_world_bank.PNG" height="400" width="800" ></a>
  
  * [Google Public Data Explorer](https://www.google.com/publicdata/directory)
  
@@ -82,8 +80,8 @@
  У 2016 році цей набір інструментів був розширений за допомогою Google Analytics Suite, зокрема Data Studio 360, випуск якого розширився до безоплатної публічної бета-версії в травні 2016 року, що дозволило імпортувати загальнодоступні або окремі набори даних та накладати зручні (некодуючі) інструменти візуалізації даних.
  
  <hr>
- 
- <a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/e-andrew/docs/requirements/graphics/statistics_poland.PNG" height="400" width="800" ></a>
+  
+ <a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/e-andrew/docs/requirements/graphics/google_public_data.PNG" height="400" width="800" ></a>
  
 * [Statistics Poland](https://stat.gov.pl/en/)
 
@@ -97,7 +95,7 @@ Statistics Poland (раніше відомий як Центральне ста�
   
   <hr>
  
- <a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/e-andrew/docs/requirements/graphics/eurostat.PNG" height="400" width="800" ></a>
+ <a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/e-andrew/docs/requirements/graphics/statistics_poland.PNG" height="400" width="800" ></a>
  
 * [Eurostat](https://ec.europa.eu/eurostat/data/database)
 
@@ -109,6 +107,8 @@ Statistics Poland (раніше відомий як Центральне ста�
   - розрахувати сукупні дані для Європейського Союзу та єврозони, використовуючи дані, зібрані національними статистичними органами відповідно до гармонізованих стандартів;
   - зробити європейську статистику вільно доступною для тих, хто приймає рішення, та громадян через веб-сайт Євростату та інші канали. </br>
 
+ <a href="url"><img src="https://github.com/e-andrew/Industrial_Eden/blob/e-andrew/docs/requirements/graphics/eurostat.PNG" height="400" width="800" ></a>
+ 
 ## Порівняльна характеристика існуючих засобів вирішення завдання
 
 
