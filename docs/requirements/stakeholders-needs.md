@@ -18,7 +18,7 @@
 
 ### Основні визначення та скорочення
 
-Дивись в [Industrial Eden. Аналіз предметної області](https://github.com/e-andrew/Industrial_Eden/edit/e-andrew/docs/requirements/state-of-the-art.md)
+Дивись в [Industrial Eden. Аналіз предметної області](https://github.com/e-andrew/Industrial_Eden/blob/e-andrew/docs/requirements/state-of-the-art.md)
 
 ## Короткий зміст
 
@@ -60,22 +60,6 @@
   - зміна політики партнерського проекту щодо даних.
 
 ***ОСНОВНИЙ СЦЕНАРІЙ***</br>
-**РОЛІ:**
-  - Andrii Koreniuk - Tech Lead;
-  - Alexei Krasnovskiy - Developer;
-  - Oleksii Khandeldy - Developer;
-  - Rostislav Ohochyi - Developer;
-  - Valentyn Zhelepa - Developer;
-  - Dmytro Lypchak - Developer;
-  - Vsevolod Mykytenko - Developer.
-
-**ЕТАПИ:**
-  - Етап №1. Виявлення вимог до функціональності програми. Розробка запитів зацікавлених осіб.</br>
-  - Етап №2. Виявлення вимог до функціональності програми. Розробка моделі прецедентів.</br>
-  - Етап №3. Розробка моделі бізнес-об’єктів.</br>
-  - Етап №4. Розробка реляційної схеми.</br>
-  - Етап №5. Реалізація бази даних засобами MySQL.</br>
-  - Етап №6. Реалізація об’єктно-реляційного відображення.</br>
 
 ## Короткий огляд продукту
 
