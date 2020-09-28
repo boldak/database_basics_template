@@ -1,5 +1,8 @@
 # Industrial Eden
 
+## Призначення
+Industrial Eden - це система управління відкритими даними.
+
 ## Учасники проекту
 
 Yurii Onyshchuk: fjehhur@gmail.com</br>
