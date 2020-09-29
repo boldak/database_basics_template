@@ -16,7 +16,7 @@
 
 ### Основні визначення та скорочення
 
-Дивись в [Industrial Eden. Аналіз предметної області](https://github.com/e-andrew/Industrial_Eden/blob/e-andrew/docs/requirements/state-of-the-art.md)
+Дивись в [Industrial Eden. Аналіз предметної області](https://github.com/e-andrew/Industrial_Eden/blob/master/docs/requirements/state-of-the-art.md)
 
 ## Короткий зміст
 
