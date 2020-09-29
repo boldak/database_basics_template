@@ -128,15 +128,60 @@ The World Bank DataBank був створений на Бреттон-Вудсь
 
 ## Порівняльна характеристика існуючих засобів вирішення завдання
 
-*[Розділ містить опис існуючих програм, інформаційних систем, сервісів, тощо, призначених для вирішення 
-завдання. Дається порівняльна характеристика властивостей FURPS:*
-- *Functionality (функциональні вимоги)*
-- *Usability (вимоги до зручності роботи)*
-- *Reliability (вимоги до надійності)*
-- *Performance (вимоги до продуктивності)*
-- *Supportability (вимоги до підтримки)*
-
- *(у вигляді таблиці).]*
+<table>
+<thead>
+<tr>
+<th></th>
+<th align="center">Functionality</th>
+<th align="right">Usability</th>
+<th align="center">Reliability</th>
+<th align="center">Performance</th>
+<th align="center">Supportability</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gapminder</td>
+<td align="center">+</td>
+<td align="right">-</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>The World Bank DataBank</td>
+<td align="center">+</td>
+<td align="right">-</td>
+<td align="center">+</td>
+<td align="center">-</td>
+<td align="center">+</td>
+</tr>
+<tr>
+<td>Google Public Data Explorer</td>
+<td align="center">+</td>
+<td align="right">+</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">+</td>
+</tr>
+<tr>
+<td>Statistics Poland</td>
+<td align="center">+</td>
+<td align="right">-</td>
+<td align="center">+</td>
+<td align="center">-</td>
+<td align="center">-</td>
+</tr>
+<tr>
+<td>Eurostat</td>
+<td align="center">+</td>
+<td align="right">-</td>
+<td align="center">+</td>
+<td align="center">+</td>
+<td align="center">-</td>
+</tr>
+</tbody>
+</table>
 
 ## Висновки
 
