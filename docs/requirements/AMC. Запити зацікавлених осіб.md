@@ -111,7 +111,8 @@ NLP "AMC" представляє собою програмне забезпеч�
 
 
 ## Функціональність
-![](docs/materials/chrome_25TMTwBMWZ.png)
+![](http://www.plantuml.com/plantuml/png/VP0z3e9058HxJl5Ajv0pS1MYTluaYBr28fs51OM5Nc4HZGJvkSAy6pceXONPOehtpPl9xWlMSHZ5cyNS2oVnAXASqEaMbUuqqHHNMCsyVr1yVomZNCWxpUWbi5GbkA53pRK6TxHllDTS3yPLSzISkPwk9Qy-HGyE_J0OSMNF97JG_3wWfnggrDGumoZeV8Cbdkmfg5PJuLvDODd7Zx1XIEV62sRBAG_s0W00)
+
 Основні вимоги до функціональності, що пред'являються зацікавленим особами до предмету розробки, відносяться до таких категорій:
 
 * Інтеграція програмного забезпечення.
