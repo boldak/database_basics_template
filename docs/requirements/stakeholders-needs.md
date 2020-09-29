@@ -33,9 +33,11 @@
 
 ### Посилання
 
-[ОБД. Лекція 2](https://drive.google.com/file/d/1Q-PMFoOsDaMOKP-ZXvyZqb-c9O9U_j8Y/view)
-[ОБД. Лекція 2](https://drive.google.com/file/d/1Q-PMFoOsDaMOKP-ZXvyZqb-c9O9U_j8Y/view)
-[ОБД. Лекція 2](https://drive.google.com/file/d/1Q-PMFoOsDaMOKP-ZXvyZqb-c9O9U_j8Y/view)
+ - [ОБД. Лекція 2](https://drive.google.com/file/d/1Q-PMFoOsDaMOKP-ZXvyZqb-c9O9U_j8Y/view)
+
+ - [Huffpost](https://www.huffpost.com/entry/the-open-data-charter-a-r_b_8391470)
+
+ - [Creative Commons](https://wiki.creativecommons.org/wiki/Share_Alike)
 
 
 ## Короткий зміст
