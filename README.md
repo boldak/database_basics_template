@@ -1,7 +1,7 @@
-# AMC
-AMC(analytics media content)
+# AMC (analytics media content)
+Service of analytical media content
 
-Учасники проекту:
+# Учасники проекту:
 
 [Гайдукевич Марія](https://github.com/matyyaa)
 
