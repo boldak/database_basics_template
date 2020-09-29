@@ -98,11 +98,11 @@
 
 |                             | Functionality | Usability |Reliability|Performance |Supportability |
 | ------------- |:-------------:| -----:|:-------------: |:-------------: |:-------------: |
-| Gapminder                   | +             | +-        |       +    |        +    |        +-   |
+| Gapminder                   | +             | +-        |       +    |        +    |        +   |
 | The World Bank DataBank     | +             |   +-      |       +    |       +-     |        +     |
 | Google Public Data Explorer | +             |    +     |      +     |       +     |        +     |
-| Statistics Poland           | +             |    +-     |      +     |        +-    |         +-    |
-| Eurostat                    | +             |    +-     |      +    |      +      |       +-     |
+| Statistics Poland           | +             |    +-     |      +     |        +-    |         +    |
+| Eurostat                    | +             |    +-     |      +    |      +      |       +     |
 
 
 ## Висновки
