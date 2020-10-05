@@ -98,13 +98,13 @@
 &#160;&#160;&#160;&#160;Координування діяльності статистичних організацій країн — членів ЄС з метою стандартизації методики досліджень та консолідування 
 даних цих організацій
 
-|                             | Functionality | Usability |Reliability|Performance |Supportability |
+|                             | Functionality |  || | |
 | ------------- |:-------------:| -----:|:-------------: |:-------------: |:-------------: |
-| Gapminder                   | +             | +-        |       +    |        +    |        +   |
-| The World Bank DataBank     | +             |   +-      |       +    |       +-     |        +     |
-| Google Public Data Explorer | +             |    +     |      +     |       +     |        +     |
-| Statistics Poland           | +             |    +-     |      +     |        +-    |         +    |
-| Eurostat                    | +             |    +-     |      +    |      +      |       +     |
+| Gapminder                   |              |         |           |            |           |
+| The World Bank DataBank     |              |         |           |            |             |
+| Google Public Data Explorer |              |         |           |            |             |
+| Statistics Poland           |              |         |           |            |             |
+| Eurostat                    |              |         |          |            |            |
 
 
 ## Висновки
