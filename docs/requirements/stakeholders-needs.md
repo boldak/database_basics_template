@@ -30,13 +30,11 @@
 
 ## Характеристика ділових процесів
 
-***ID:*** ***IV-92 (2)***<br>
-
-Type: Business Use Case | Package: #002 | Scenario: #002 | Version: 1.0 | BUC.002.002.v1.0<br>
+***ID:*** ***IV-92 (2)*** Type: Business Use Case | Package: #002 | Scenario: #002 | Version: 1.0 | BUC.002.002.v1.0<br>
 
 ***НАЗВА:*** : Cтворення проекту.<br>
 
-***УЧАСНИКИ:***<br> : Team Lead, керуючий<br>
+***УЧАСНИКИ:*** : Team Lead, керуючий<br>
 
 ***ПЕРЕДУМОВИ:*** : Вимоги замовника<br>
 
