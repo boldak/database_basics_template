@@ -120,54 +120,66 @@
 <table>
 <thead>
 <tr>
-<th></th>
-<th align="center">Functionality</th>
-<th align="right">Usability</th>
-<th align="center">Reliability</th>
-<th align="center">Performance</th>
-<th align="center">Supportability</th>
+<th>Функціонал</th>
+<th align="center">Анімовані дані</th>
+<th align="center">Додавання статей користувачем</th>
+<th align="center">Створення користувацьких запитів</th>
+<th align="center">Прогнозування від наукових установ</th>
+<th align="center">Обробка єдиних статистичних стандартів</th>
+<th align="center">Матеріали для навчання</th>
+<th align="center">Інтерактивні дашборди</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Gapminder</td>
 <td align="center">+</td>
-<td align="right">-</td>
-<td align="center">+</td>
-<td align="center">+</td>
 <td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">+</td>
+<td align="center">+</td>
 </tr>
 <tr>
 <td>The World Bank DataBank</td>
+<td align="center">-</td>
 <td align="center">+</td>
-<td align="right">-</td>
 <td align="center">+</td>
 <td align="center">-</td>
+<td align="center">-</td>
+<td align="center">+</td>
 <td align="center">+</td>
 </tr>
 <tr>
 <td>Google Public Data Explorer</td>
 <td align="center">+</td>
-<td align="right">+</td>
 <td align="center">+</td>
+<td align="center">-</td>
 <td align="center">+</td>
-<td align="center">+</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
 </tr>
 <tr>
 <td>Statistics Poland</td>
 <td align="center">+</td>
-<td align="right">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
 <td align="center">+</td>
-<td align="center">-</td>
-<td align="center">-</td>
 </tr>
 <tr>
 <td>Eurostat</td>
-<td align="center">+</td>
-<td align="right">-</td>
-<td align="center">+</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
+<td align="center">-</td>
 <td align="center">+</td>
 <td align="center">-</td>
+<td align="center">+</td>
 </tr>
 </tbody>
 </table>
