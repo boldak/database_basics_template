@@ -120,3 +120,7 @@ DataBank – це інструмент аналізу та візуалізац�
 *https://stud.com.ua/97162/informatika/dani*
 
 *https://stud.com.ua/97162/informatika/dani*
+
+
+> [Інформація щодо COVID-19 в світі] (https://covid19info.live/)
+> [Свіжі Новини України] (https://www.ukr.net/ua/)
