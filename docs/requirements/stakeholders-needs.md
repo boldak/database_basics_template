@@ -51,14 +51,14 @@
 щотижневими виплатами.
 
 <div hidden>
- 
+```
 @startuml firstDiagram
 
 Alice -> Bob: Hello
 Bob -> Alice: Hi!
 		
 @enduml
- 
+```
 </div>
 
 **1.1 Сценарій створення статті**
