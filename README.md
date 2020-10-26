@@ -1,13 +1,15 @@
-# database_basics_template
+# Industrial Eden
 
-Шаблон репозиторію для виконання лабораторних робіт з курсу "Організація баз даних"
+## Призначення проекту
+Industrial Eden - це система управління відкритими даними.
 
-*Для виконання лабораторних робіт необхідно зробити ```fork``` цього репозіторію, склонувати вже власний репозіторій та розміщувати документацію (результати виконання лабораторних робіт) у відповідних діректоріях. 
-В цьому файлі необхідно вказати назву проекту (тему лабораторних робіт). Коротку загальну характеристику
-проекту, контактні дані виконавців.*
+## Учасники проекту
 
-[Теми проєктів](./guidelines/themes.md)
-
-[Методичні вказівки](./guidelines/guidelines.md)
-
-[Звітність](https://docs.google.com/spreadsheets/d/1ePb9OBB7ox0E5-GAh2r6ZU3j--PpAROCUfqzA17kL20/edit?usp=sharing)
+Yurii Onyshchuk: fjehhur@gmail.com</br>
+Alexei Krasnovskiy: finchatticu33@gmail.com</br>
+Oleksii Khandeldy: khandeldyar@gmail.com</br>
+Andrii Koreniuk: epic.andrew@ukr.net</br>
+Rostislav Ohochyi: ohochyi2002@gmail.com</br>
+Valentyn Zhelepa: neokek1@gmail.com</br>
+Dmytro Lypchak dl080202@gmail.com</br>
+Vsevolod Mykytenko: vsevolod200229@gmail.com</br>
