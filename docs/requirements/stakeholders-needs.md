@@ -110,6 +110,6 @@
 - Використання стандарту i18n;
 
 Додаток
-<p href=https://covid19info.live/>Інформація щодо COVID-19 в світі</p>
+<a href=https://covid19info.live>Інформація щодо COVID-19 в світі</a>
 
-<p href=https://www.ukr.net/ua/>Свіжі Новини України</p>
+<a href=https://www.ukr.net/ua>Свіжі Новини України</a>
