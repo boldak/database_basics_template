@@ -1,0 +1,24 @@
+@startuml
+
+    actor TeamLead
+    
+    
+
+usecase "Управління командою" as UC_2
+usecase "Додати розробника\nдо проекту" as UC_12 #FFFFFF
+usecase "Дати права розробнику" as UC_22 #FFFFFF
+usecase "Змінити права розробника" as UC_32 #FFFFFF
+usecase "Видалити розробника\nз проекту" as UC_42 #FFFFFF
+
+
+TeamLead -r->UC_2
+
+UC_12 .u.> UC_2
+UC_22 .u.> UC_2
+
+UC_32 .u.> UC_2
+UC_32 .l.> UC_22
+
+UC_42 .u.> UC_2
+
+@enduml
