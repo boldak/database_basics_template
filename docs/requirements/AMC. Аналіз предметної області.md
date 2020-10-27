@@ -122,7 +122,7 @@
 
 ### Таблиця порівнянь існуючих засобів вирішення завдання
 
-|    Критерій \ Сервіс   |             [Semantrum](https://promo.semantrum.net/uk/golovna/)            |            neticle Media Intelligence           |        youscan        |              AMC    |        
+|    Критерій \ Сервіс   | [Semantrum](https://promo.semantrum.net/uk/golovna/) |[neticle Media Intelligence](https://neticle.com/company/en/)| [youscan](https://youscan.io/ru/)|    AMC    |        
 |:----------------------------:|:-----------------------------:|:-----------------------------:|:-----------------------------:|:-----------------------------:|
 | AI Systems                |               ✔️               |               ✔️               |               ✔️               |           s               |                  
 | Big Data                  |                                 |                                |                                |                           |
