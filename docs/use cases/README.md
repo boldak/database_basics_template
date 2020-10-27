@@ -16,3 +16,5 @@
 ```
 ![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/boldak/database_basics_template/master/src/uml/example.puml)
 ```
+
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/dmitriy-uvin/operating_project_system/Skvortsov/docs/use%20cases/controlTeam.puml)
