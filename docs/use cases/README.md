@@ -1,9 +1,32 @@
-
 ![](http://www.plantuml.com/plantuml/png/XP4rGiH068NxEKManQ75fQA42erLwrPZDMu7u0BhyUGARquKLsp7zVlbRNMwGhlRgrK9OO8YIDr6cpbIXDgX8iZHKJoGNaUHX8x2SFY2Iw_Hnn0c_O0DcpuoCE30GZ_OZk7G1uuHEipnxiLAuTyR78pHfxVGc03WG8t60MneCD0_hOT_cOZkO0A3tjAx5BIyml07KIaHOrhcKFyNSCvO-Otn2IkAGfjDGZybhVv6Ue4MnWSJsdyngdz4k9Op2KaLOERRynjH7acSX8NUmaQSs738z_63rTA3U5zDzl6BjTANBQKk1zhx)
 
-![](http://www.plantuml.com/plantuml/png/hLKrsXjH3Ept5Fg-bE4qOUO-LFxCP3lCpCoC5tXUCrz1kb56CZEp1JCZUBi7GkV7W-SlB2zvXCVIzCnvcfiUdveEUcgmnvwPrPNpDBcwj1hSksNB5WhDNvtUktN7lZqJ-quUsRLdyyG-EdruHo_X_8CT9zXdLqpZFt8N__9ocsESuvoy8hWTHzd98_dO4-G_UOJeEqXFSfgJ9U2l1fgKEt9Nxh6lU1i8KMO1MPPTJ-Y_E6RYea39SfxzJWoaiFAUk02FKnl1-H7M33wZFLB-1bq2a1bv3gbExewkLs-jHnbvAOy0yD4QOlATF9IFyicOkYBHqNCxDcqbPJOKgFArHNZRtnn-f4j2qt8N__EzOMuZBHYviM9flb5OhKeIXrq-wgZbdholGFPK-KzDi_dfdgHGkJoqFZgvZTcagfLFhqpLdO3hhIPzlK9gnwTPoowoNOzgXpbZMs4b5RJXfBoGq76Wk-j1h_EVskMztfBo9uU1bkUmphWdojsT5Cjz2ytAFHrsnWGQeFMn6Q9pl-gbVge2gLIRF4IsLL1bMLazFqt1-TcvyxHkPcOSZ-e6w3dv3jGuyfDQQPtBzhPYmQ0DguS-T-fnLMA77ezcDUeFH9JpHMk4dLuiTB_b4q6OWpb9fTYaFEXrGjKQOOTVYr9rDYVvg8nwBQjgAcWdUbZaaKnkM_l9XSwlhktsl0Dmu4xs7m00)
+***ID:*** UC8 <br>
+***Назва:*** Створення задачі <br>
+***Учасники:*** Користувач, система<br>
+***Передумови*** Користувач має права тімліда<br>
+***Результат:*** Нова задача<br>
+***Виключні ситуації:*** <br>
+- EX8.1 дані введені некоректно <br>
+- EX8.2 така задача вже існує <br>
+- EX8.3 розробника нема в проекті, в якому створюється задача <br>
 
-![](http://www.plantuml.com/plantuml/png/jLH3jYL149tNAdBU7hNj1VIylstRjkqD59-nXOWT_PlvRDSe5LSHfxuC3DRr3mvrTMe2NsTJyw1eRQfhREhNv87wFZJtT0-AXfxEdlwFBr--50DjuqqVNxtvzA7-qzyVxpwygFya_dr_MynpkYATt6II7YcZ6t9ubXoooCyxP0jSwcIJpYk2mhW9uSx7yxnG5Fe3hw1qZeBa8HzveXpd50AIX-Sa3hW1_bJWbJe1Ve3qOj3ZMcrUG4s8p7mCGiBoOSI5Biy4V8KYJt2ueBRbcBp5QpSm_Bm9-JhFvnCHmWQ75E05Y87fi7m1HbzIr77QelYlLS2mhsBs2X0kauEDphDyJ5ubHo4rTJUcpD9aDesJSL8rY9bQtWarDRRi6Fbbg4gwSZ8l92zIB7QCtgVYJz9TyXXCPcM_9aD1603VBeBzVMsagu5HrtYho_RBDl29W30TnnuXosHJU2d3PjRWCumMCopP0rNjw-bzhsbVq7NyJHu1)
+![](http://www.plantuml.com/plantuml/png/ZLH5bXjH3DptAVHUbc5cJkwGPPWvdLKopCpC9p1ZqnMa6usafc_se5rLAkcNlllH7_lLR_lljw-M1Vpr7tVHfs6iqWYDqXZcCKjJ_vMIBnKdxv8NTm0FC8j56i4gEboo3bXX862VKK0Fio1-x2RU9GOyMXBSLsWhL1Ub5stURVJ_ZoVXD5pdOlP_s-w7c6DZ7tFeq69VtUzs6vx6LUhI662HBPSYGvtNQxNe5PtPQoirub7DNdSIsNcT6YlYqIacKnn8Mx6XJSc9HZihLRN4b8zrODigrj7NRdgcJeKqmSQ-KK1Zj6wAnmmnGoN9ZSaQUfsxzB_lphis0-oqQpDO6cD-KuDekrZQRBy56XCEwmmuD2z4brY3rWEpEOGOp-k84ur66Hhbgd21QO-cEOO98wdMkJo1zP1Lh866KWcZKQWEEa_0RMOIbK10apJFJ44s6cX5APmdtSNt7_Ox-FtfmqSRphn__ug_4khUwmU0-rnKHWUh4dK3zVp5hGkNp-c_A-UWXRgQ8E--lzKsBHi-YHUe-mtlFuqPKPY3zliXJAuFuyoZ6wOVgFcc9kMYapwSD9VMozJfxlwnV_oyQrcF-53yC3q5)
 
-![](http://www.plantuml.com/plantuml/png/hPM3ZcHX48LZz5DKil7gzWHhEyOg7jkpjcsRBz36vIjKlT6S-g_7RlxupYcb3yvSw9g-S75ij43u6-thlq23VLszVTC5B8H_U_idnYzGpyJenFG-ox9ePkXQtxxYplrxk_UVEhfxx_Rk_NJcID5QoNd-oILkSeLBuJt-mtMkOQqgztMLFVRaDU58IPVbiNnQ4VQ_FCRfkxZUOfjR4VmR-tA7Mt9NxYbUULj8xeOh47Qvj2BwRww30wEWkEo3j8G2ALO-40VOAUaQOVCJLXsyrbOegNbf0kd82rWjoRqb1B6G9565q-JTNv7MEqqQb5uXYPvy2ZEa-98yaa_osKWlIpfslcXjAvAw1StdAlkXbGhNqi9wN2SmKIdrkZ9eXxccK1Ef3GbFuHNyQ-1rupfKoVJBYcB_fLPCIRLrseXT7YaGiTz1kTffx7tZlRd9kB5GBMuaecQivdlPJMO4QffZThWKrolGb9FgefpBpiIUFFW6_ytsz8q5PNzn6MIVorhf5SlkMQdpMbpkAfxeMisgV2R8wS2tz823AB1uJvF6RXgOAHme3rEnyOaBVJGzD31uWJRrztVXBwscZi4F1DA0YnQS-hcji0sJ9QsQmfOAGnwOGhfo7n4aTk2m5GwndnkfrEHoRP3LVAT6WT31Ua5XosMQTiCYxrXZv32mH3Ujk7Uv2TWd7UvSvUVLT-R2nEIUGk4WJEAdPnO0)
+***ID:*** UC9 <br>
+***Назва:*** Перегляд задач проекту <br>
+***Учасники:*** Користувач, система<br>
+***Передумови*** Користувач має права тімліда<br>
+***Результат:*** Список задача<br>
 
+![](http://www.plantuml.com/plantuml/png/ZLB3OKP16Bnl5Tj6d5B2KwnJx5Di9nKyMotCrr7cj_6m72scjxPdDxTtLfQLqdpsy8vSZX3AiPp8AMoOShd7gSfJ1jTxzSQenXTCk7AC40afZne11mhgd6XaC3NR7dKzE4Za1gucbjCiOpcje5tGYq32SW9ZOO2nLhCz_5MYSJw5kTSroZUiieH5f-iXeeoraEdAvIELKrAh4NF4BH43EFBCJeQyCs_lFM6pII-lEH6LSVYyoQ8XC-XKUcTlTHkymLlRQ-jZIaqlhYxmElm3)
+
+**ID:*** UC10 <br>
+***Назва:*** Редагування задачі <br>
+***Учасники:*** Користувач, система<br>
+***Передумови*** Користувач має права доступу до проекту<br>
+***Результат:*** Відредагована задача<br>
+***Виключні ситуації:*** <br>
+- EX10.1 такої задачі не існує <br>
+- EX10.2 дані введені некоректно <br>
+
+![](http://www.plantuml.com/plantuml/png/ZLJ5jHn14Bjl56LcEfev1n_Dp70oCpEp7S4o3wIWokXBq-_FCaEnrEgUtdFj-f6hrszSE5ye65-ty0E9tqFBx_i3VuWAIlxq5bFXbHNdNcviC_ncuGEreKFha_4lHe8K7NzeI_4FTTHGGZNCLAcXoK1D0FvmwVR1gRVmFt1WNuJIhR6OVr0crGHbTFsDC3KmPTy38tZ9c1n0PJ3sjpsaYvUkdx2hPqwTlcxBJfuymbUUsd5qb-4N4ZJGHOlDoK3guA4jcpTkoKCdBXxFXWq9WXhbQA4B2UAF92mYVqYU9bg8cOmaHAfb3EZH9yUCRUd7_ChnNn1JZ6buY6mrxRf9Eduhg_mjiJioHKD68nIaDBkehzcMesoGj2eioIYnZ-PejeKsCIM_beysuWargLWIlyPGnnGLFkB5tHhVrbz7k-vF_9NqarFBM-TWDT94uMUUmT6Zrw-sE6bis8g78mWpj3H_Y9Yj7GQw_ag9-QHBXwKpQ0z3ZFow6ghJapqf_UsgY2oZ-umhVjnt4YT01xQnAYXE30Mb1vf15ON4ITHI8ZxFgnGoRHSpLPhXxACUg6sVwnQI_empZoWi9nKrBa1uaKuiWW9X-iXkX8Vio_Q-U-tIPMBluOFCgt01)
