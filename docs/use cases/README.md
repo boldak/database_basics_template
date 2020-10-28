@@ -20,7 +20,7 @@
 
 ![](http://www.plantuml.com/plantuml/png/ZLB3OKP16Bnl5Tj6d5B2KwnJx5Di9nKyMotCrr7cj_6m72scjxPdDxTtLfQLqdpsy8vSZX3AiPp8AMoOShd7gSfJ1jTxzSQenXTCk7AC40afZne11mhgd6XaC3NR7dKzE4Za1gucbjCiOpcje5tGYq32SW9ZOO2nLhCz_5MYSJw5kTSroZUiieH5f-iXeeoraEdAvIELKrAh4NF4BH43EFBCJeQyCs_lFM6pII-lEH6LSVYyoQ8XC-XKUcTlTHkymLlRQ-jZIaqlhYxmElm3)
 
-**ID:*** UC10 <br>
+***ID:*** UC10 <br>
 ***Назва:*** Редагування задачі <br>
 ***Учасники:*** Користувач, система<br>
 ***Передумови*** Користувач має права доступу до проекту<br>
