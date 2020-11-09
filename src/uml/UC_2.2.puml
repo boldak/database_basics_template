@@ -1,0 +1,22 @@
+@startuml
+left header
+        
+        <font color=000 size=16><b>ID:</b> UC_2.2
+        <font color=000 size=16><b>Назва:</b> Переглянути список звітів
+        <font color=000 size=16><b>Учасники:</b> Користувач, Система
+        <font color=000 size=16><b>Передумови:</b> Відсутні
+        <font color=000 size=16><b>Результат:</b> Вивести список звітів
+        <font color=000 size=16><b>Виключні ситуації:</b>
+        <font color=000 size=16> Відсутні
+        
+        <font color=000 size=16><b>Основний сценарій:</b>
+        
+    end header
+
+    |Користувач|
+        start
+        : Натискає кнопку [Каталог];
+    |Система|
+        : Виводить список звітів;
+        stop;
+@enduml
