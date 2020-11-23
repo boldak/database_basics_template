@@ -1,13 +1,13 @@
 @startuml
 left header
         
-        <font color=000 size=16><b>ID:</b> UC_2.3
+        <font color=000 size=16><b>ID:</b> UC_2.2.2
         <font color=000 size=16><b>Назва:</b> Пошук звіту
         <font color=000 size=16><b>Учасники:</b> Користувач, Система
         <font color=000 size=16><b>Передумови:</b> Користувач відкрив "Каталог"
         <font color=000 size=16><b>Результат:</b> Знайти потрібний звіт
         <font color=000 size=16><b>Виключні ситуації:</b>
-        <font color=000 size=16> ЕХ.2.3.1 Шуканий звіт відсутній
+        <font color=000 size=16> ЕХ.2.2.2.1 Шуканий звіт відсутній
         
         <font color=000 size=16><b>Основний сценарій:</b>
         
@@ -20,7 +20,7 @@ left header
         : Виводить шуканий звіт;
         note right #ffaaaa
         <b> Можливо
-        <b> EX.2.3.1
+        <b> EX.2.2.2.1
         end note
         stop;
 @enduml
