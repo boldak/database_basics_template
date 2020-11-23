@@ -4,12 +4,6 @@
 
 #
 
-test
-
-![uml](../../src/uml/UC_2.1.puml)
-
-#
-
 ![uml](http://www.plantuml.com/plantuml/png/TP7FIiD04CRlUOeXFJVYtYeb5Eehz5OesxXui4R99Y28O5lKczugUF4LQhGq_abzXM_VoDdTbbpg77QM_MP-ymtRqxdCyk9y4bpAv4oUAXhqZqSY4dGTq3OAhHAf5ONTSJpeZqJtO1mFKxoQMopDlNb4oNc6Yh0cr5ZY3HkhuGSLrttmhKPbxaAIcYo0Mb8g9QMRS1Eu99Fy8gCGBxQNgwTcPkQE_E3xjCgefJWw7TSGxBCMYUZGsYFh3oichV2ER_E4sioTHpF5hyLZWoykMgCq2nwrGBcpnuZ_s6B7VdPxVlgjjunXsX14uBTohjkJTkoU6zz-34L5v9KZKbUvIazqeufzQezF_gm_)
 
 #
