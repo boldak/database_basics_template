@@ -1,0 +1,29 @@
+@startuml
+    package UCD_1.0 {
+        usecase "<b>UC_5</b>\nРедагувати конфігурації \nпорталу" as UC_5 #aaeeaa
+    }
+
+    actor "Адміністратор" as Admin #eeee99
+    
+    usecase "<b>UC_5.1</b>\nУправління правами \nкористувачів" as UC_5_1
+    usecase "<b>UC_5.1.1</b>\nПереглянути список \nкористувачів" as UC_5_1_1
+    usecase "<b>UC_5.1.1.1</b>\nЗастосувати фільтр\n" as UC_5_1_1_1
+    usecase "<b>UC_5.1.1.2</b>\nПереглянути профіль \nкористувача" as UC_5_1_1_2
+    usecase "<b>UC_5.1.1.2.1</b>\nРедагувати права \nкористувача" as UC_5_1_1_2_1
+    usecase "<b>UC_5.2</b>\nУправління звітами\n" as UC_5_2
+    usecase "<b>UC_5.2.1</b>\nДодати тему\n" as UC_5_2_1
+    usecase "<b>UC_5.2.2</b>\nВидалити тему\n" as UC_5_2_2
+
+
+    Admin -d-> UC_5
+    
+    UC_5_1 .u.> UC_5: extends
+    UC_5_2 .u.> UC_5: extends
+    UC_5_1_1 .u.> UC_5_1: extends
+    UC_5_1_1_1 .l.> UC_5_1_1: extends
+    UC_5_1_1_2 .u.> UC_5_1_1: extends
+    UC_5_1_1_2_1 .l.> UC_5_1_1_2: includes
+    UC_5_2_1 .u.> UC_5_2: extends
+    UC_5_2_2 .u.> UC_5_2: extends
+
+@enduml
