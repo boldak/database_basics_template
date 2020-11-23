@@ -1,5 +1,5 @@
 @startuml
-package UCD_2.0 {
+package UCD_2.2 {
         usecase "<b>UC_2.2</b>\nПрацювати з наборами\nданих" as UC_2.2 #aaeeaa
     }
 
