@@ -1,5 +1,5 @@
 @startuml
-    package UCD_1.0 {
+    package UCD_5.0 {
         usecase "<b>UC_5</b>\nРедагувати конфігурації \nпорталу" as UC_5 #aaeeaa
     }
 

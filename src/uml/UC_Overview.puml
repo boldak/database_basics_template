@@ -1,5 +1,5 @@
 @startuml
-    actor "Гість" as Guest
+actor "Гість" as Guest
     actor "Користувач" as User
     actor "Автор" as Author
     actor "Редактор" as Collaborator
@@ -7,19 +7,16 @@
     
     usecase "<b>UC_1.1</b>\nЗареєструватися" as UC_1_1
     usecase "<b>UC_2.1</b>\nУвійти в систему" as UC_2_1
-    usecase "<b>UC_2.2</b>\nПереглянути список \nзвітів" as UC_2_2
-    usecase "<b>UC_2.3</b>\nЗнайти звіт" as UC_2_3
+    usecase "<b>UC_2.2</b>\nПрацювати з\nнаборами даних" as UC_2_2
     usecase "<b>UC_3.1</b>\nРедагувати звіт" as UC_3_1
-    usecase "<b>UC_4.1</b>\nСтворити звіт" as UC_4_1
-    usecase "<b>UC_4.2</b>\nВидалити звіт" as UC_4_2
+    usecase "<b>UC_4</b>\nУправляти наборами\nданих" as UC_4
     usecase "<b>UC_5</b>\nРедагувати конфігурацію \nпорталу" as UC_5
     
-    Guest -u-> UC_1_1
+    Guest -r-> UC_1_1
 
     User -u-|> Guest    
-    User -u-> UC_2_1
-    User -l-> UC_2_2
-    User -> UC_2_3
+    User -l-> UC_2_1
+    User -r-> UC_2_2
     
     Collaborator -u-|> User
     Collaborator -l-> UC_3_1
@@ -33,8 +30,7 @@
     end note
     
     Author -u-|> Collaborator
-    Author --> UC_4_1
-    Author -> UC_4_2
+    Author -r-> UC_4
     
     note left of Author #fff
     

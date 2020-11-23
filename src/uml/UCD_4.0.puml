@@ -1,0 +1,16 @@
+@startuml
+package UCD_4.0 {
+        usecase "<b>UC_4</b>\nУправляти наборами\nданих" as UC_4 #aaeeaa
+    }
+
+    actor "Автор" as Author #eeee99
+    
+    usecase "<b>UC_4.1</b> \nВидалити звіт" as UC_4.1
+    usecase "<b>UC_4.2</b> \nСтворити звіт" as UC_4.2
+
+
+    Author -l-> UC_4
+    
+    UC_4.1 .u.> UC_4: extends
+    UC_4.2 .u.> UC_4: extends
+@enduml
