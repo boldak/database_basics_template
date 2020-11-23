@@ -1,5 +1,5 @@
 @startuml
-package UCD_2.2 {
+package UCD_2.2.0 {
         usecase "<b>UC_2.2</b>\nПрацювати з наборами\nданих" as UC_2.2 #aaeeaa
     }
 
@@ -9,7 +9,7 @@ package UCD_2.2 {
     usecase "<b>UC_2.2.2</b> \nЗнайти звіт\n" as UC_2.2.2
 
 
-    User -l-> UC_2.2
+    User -r-> UC_2.2
     
     UC_2.2.1 .u.> UC_2.2: extends
     UC_2.2.2 .u.> UC_2.2: extends
