@@ -59,6 +59,7 @@
 
 ## Сценарій №11
 
+
 ![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Vov11x/database_basics_template/master/src/uml/UC_3.1.1.2.puml)
 
 
@@ -81,3 +82,25 @@
 ## Сценарій №15
 
 ![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Vov11x/database_basics_template/master/src/uml/UC_3.2.puml)
+
+
+# Пакет 4.0
+
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Vov11x/database_basics_template/master/src/uml/UCD_4.0.puml)
+
+## Сценарій №16
+
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Vov11x/database_basics_template/master/src/uml/UC_4.1.1.puml)
+
+## Сценарій №17
+
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Vov11x/database_basics_template/master/src/uml/UC_4.1.2.puml)
+
+## Сценарій №18
+
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Vov11x/database_basics_template/master/src/uml/UC_4.1.3.puml)
+
+## Сценарій №19
+
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Vov11x/database_basics_template/master/src/uml/UC_4.2.puml)
+
