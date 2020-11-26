@@ -1,0 +1,24 @@
+@startuml
+package UCD_3.0 {
+        usecase "<b>UC_3</b>\nРедагувати конфігурації \nпорталу" as UC_3 #aaeeaa
+    }
+
+    actor "Адміністратор" as Admin #eeee99
+    
+    usecase "<b>UC_3.1</b>\nУправляти правами \nкористувачів" as UC_3_1
+    usecase "<b>UC_3.1.1</b>\nПереглянути список \nкористувачів" as UC_3_1_1
+    usecase "<b>UC_3.1.1.1</b>\nЗастосувати фільтр\n" as UC_3_1_1_1
+    usecase "<b>UC_3.1.1.2</b>\nПереглянути профіль \nкористувача" as UC_3_1_1_2
+    usecase "<b>UC_3.1.1.2.1</b>\nРедагувати права \nкористувача" as UC_3_1_1_2_1
+    usecase "<b>UC_3.2</b>\nМоніторити статистику\n" as UC_3_2
+
+
+    Admin -d-> UC_3
+    
+    UC_3_1 .u.> UC_3: extends
+    UC_3_2 .u.> UC_3: extends
+    UC_3_1_1 .u.> UC_3_1: extends
+    UC_3_1_1_1 .l.> UC_3_1_1: extends
+    UC_3_1_1_2 .u.> UC_3_1_1: extends
+    UC_3_1_1_2_1 .l.> UC_3_1_1_2: includes
+@enduml
