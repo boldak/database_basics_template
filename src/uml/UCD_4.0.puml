@@ -1,16 +1,19 @@
 @startuml
 package UCD_4.0 {
-        usecase "<b>UC_4</b>\nУправляти наборами\nданих" as UC_4 #aaeeaa
+        usecase "<b>UC_4.1</b>\nПідтримувати\nроботу порталу" as UC_4_1 #aaeeaa
     }
 
-    actor "Автор" as Author #eeee99
+    actor "Розробник" as Developer #eeee99
     
-    usecase "<b>UC_4.1</b> \nВидалити звіт" as UC_4.1
-    usecase "<b>UC_4.2</b> \nСтворити звіт" as UC_4.2
+    usecase "<b>UC_4.1.1</b> \nНалагодження" as UC_4_1_1
+    usecase "<b>UC_4.1.2</b> \nВести документацію" as UC_4_1_2
+    usecase "<b>UC_4.1.3</b> \nУправляти розсилкою" as UC_4_1_3
 
 
-    Author -l-> UC_4
+
+    Developer -r-> UC_4_1
     
-    UC_4.1 .u.> UC_4: extends
-    UC_4.2 .u.> UC_4: extends
+    UC_4_1_1 .u.> UC_4_1: extends
+    UC_4_1_2 .u.> UC_4_1: extends
+    UC_4_1_3 .u.> UC_4_1: extends
 @enduml
