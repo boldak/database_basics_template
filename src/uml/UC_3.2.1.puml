@@ -1,7 +1,7 @@
 @startuml
 left header
         
-        <font color=000 size=16><b>ID:</b> UC_5.2.1
+        <font color=000 size=16><b>ID:</b> UC_3.2.1
         <font color=000 size=16><b>Назва:</b> Додати тему
         <font color=000 size=16><b>Учасники:</b> Адміністратор, Система
         <font color=000 size=16><b>Передумови:</b> Тема відсутня в Каталозі
