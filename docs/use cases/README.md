@@ -1,6 +1,6 @@
 # Модель прецедентів
 
-![uml]()
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Vov11x/database_basics_template/master/src/uml/UC_Overview.puml)
 
 #
 
