@@ -5,8 +5,8 @@ package UCD_1.0 {
 
     actor "Користувач" as Author #eeee99
     
-    usecase "<b>UC_1.4.1</b> \nПереглянути звіт" as UC_1.4.1
-    usecase "<b>UC_1.4.2</b> \nЗавантажити звіт" as UC_1.4.2
+    usecase "<b>UC_1.4.1</b> \nПереглянути набір даних" as UC_1.4.1
+    usecase "<b>UC_1.4.2</b> \nЗавантажити набір даних" as UC_1.4.2
 
 
     Author -r-> UC_1.4
