@@ -1,7 +1,7 @@
 @startuml
     left header
         
-        <font color=000 size=16><b>ID:</b> UC_5.1.1
+        <font color=000 size=16><b>ID:</b> UC_3.1.1
         <font color=000 size=16><b>Назва:</b> Переглянути список користувачів
         <font color=000 size=16><b>Учасники:</b> Адміністратор, Система
         <font color=000 size=16><b>Передумови:</b> Відсутні
