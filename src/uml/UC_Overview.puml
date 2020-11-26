@@ -1,45 +1,29 @@
 @startuml
-actor "Гість" as Guest
-    actor "Користувач" as User
+actor "Користувач" as User
     actor "Автор" as Author
-    actor "Редактор" as Collaborator
     actor "Адміністратор" as Admin
+    actor "Розробник" as Developer
     
     usecase "<b>UC_1.1</b>\nЗареєструватися" as UC_1_1
-    usecase "<b>UC_2.1</b>\nУвійти в систему" as UC_2_1
-    usecase "<b>UC_2.2</b>\nПрацювати з\nнаборами даних" as UC_2_2
-    usecase "<b>UC_3.1</b>\nРедагувати звіт" as UC_3_1
-    usecase "<b>UC_4</b>\nУправляти наборами\nданих" as UC_4
-    usecase "<b>UC_5</b>\nРедагувати конфігурацію \nпорталу" as UC_5
+    usecase "<b>UC_1.2</b>\nУвійти в систему" as UC_1_2
+    usecase "<b>UC_1.3</b>\nЗнайти\nнабори даних" as UC_1_3
+    usecase "<b>UC_1.4</b>\nПрацювати з\nнаборами даних" as UC_1_4
+    usecase "<b>UC_2</b>\nУправляти наборами\nданих" as UC_2
+    usecase "<b>UC_3</b>\nРедагувати конфігурацію \nпорталу" as UC_3   
+    usecase "<b>UC_4.1</b>\nПідтримувати \nроботу порталу" as UC_4_1
+    usecase "<b>UC_4.2</b>\nОновити систему" as UC_4_2
+   
+    User -l-> UC_1_1
+    User -u-> UC_1_2
+    User -u-> UC_1_3
+    User -r-> UC_1_4
     
-    Guest -r-> UC_1_1
-
-    User -u-|> Guest    
-    User -l-> UC_2_1
-    User -r-> UC_2_2
-    
-    Collaborator -u-|> User
-    Collaborator -l-> UC_3_1
-    
-    note right of Collaborator #fff
-    
-        Редактор може редагувати звіт
-        тільки у тому випадку,
-        коли йому надано таке право
-    
-    end note
-    
-    Author -u-|> Collaborator
-    Author -r-> UC_4
-    
-    note left of Author #fff
-    
-        Автор може редагувати та видаляти
-        лише власні звіти
-    
-    end note
-    
+    Author -u-|> User
+    Author -r-> UC_2
     
     Admin -u-|> Author
-    Admin -l-> UC_5
+    Admin -l-> UC_3
+
+    Developer -r-> UC_4_1
+    Developer -d-> UC_4_2
 @enduml
