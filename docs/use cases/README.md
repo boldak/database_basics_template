@@ -4,7 +4,7 @@
 
 # Пакет №1.0
 
-![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Vov11x/database_basics_template/master/src/uml/UCD_.0.puml)
+![uml](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Vov11x/database_basics_template/master/src/uml/UCD_1.0.puml)
 
 
 ## Сценарій №1
