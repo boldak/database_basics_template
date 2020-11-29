@@ -1,0 +1,72 @@
+@startuml
+entity Dataverse #53CC47
+entity Dataverse.id #B7FBB1
+
+entity Dataset #53CC47
+entity Dataset.featureId #B7FBB1
+entity Dataset.entityId #B7FBB1
+entity Dataset.metadataId #B7FBB1
+entity Dataset.datapointId #B7FBB1
+
+entity Datapoint #8DE485
+entity Datapoint.id #B7FBB1
+entity Datapoint.content #B7FBB1
+
+entity Metadata #8DE485
+entity Metadata.id #B7FBB1
+entity Metadata.key #B7FBB1
+entity Metadata.metadata #B7FBB1
+entity Metadata.value #B7FBB1
+
+entity Entity #8DE485
+entity Entity.id #B7FBB1
+
+entity Feature #8DE485
+entity Feature.id #B7FBB1
+entity Feature.description #B7FBB1
+
+
+entity Admin #7BE7B8
+entity Author #7BE7B8
+
+entity User #7BE7B8
+entity User.id #C0FCE2
+entity User.nickname #C0FCE2
+entity User.email #C0FCE2
+entity User.password #C0FCE2
+
+Dataverse *-- Dataverse.id
+Dataverse "1,*"*--"0,*" Admin
+Dataverse "1,1"*--"1,*" Author
+Dataverse "1,1"*-u-"0,*" Dataset
+
+Dataset "1,1"-r-"0,*" Datapoint
+Dataset "1,1"-r-"0,*" Metadata
+Dataset "1,1"-r-"0,*" Entity
+Dataset "1,1"-l-"0,*" Feature
+
+Feature *-- Feature.id
+Feature *-- Feature.description
+
+Entity *-- Entity.id
+
+Metadata *-- Metadata.id
+Metadata *-- Metadata.key
+Metadata *-- Metadata.metadata
+Metadata *-- Metadata.value
+
+Datapoint *-- Datapoint.id
+Datapoint *-- Datapoint.content
+
+Dataset *-u- Dataset.datapointId
+Dataset *-u- Dataset.metadataId
+Dataset *-u- Dataset.entityId
+Dataset *-u- Dataset.featureId
+
+Author -r-|> User
+Admin -r-|> Author
+User --* User.id
+User --* User.nickname
+User --* User.email
+User --* User.password
+@enduml
