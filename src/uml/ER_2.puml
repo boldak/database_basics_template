@@ -15,8 +15,7 @@ entity Dataset #53CC47 {
     id: INT
 }
 
-note "same as file" as nds
-nds .. Dataset
+
 
 entity Access #53CC47 {
     role: TEXT
@@ -27,18 +26,15 @@ entity File #8DE485 {
     id: INT
 }
 
-note "role, filePath, fileUrl is metadata \ngrouped as MainFileOptions, for example" as nf
 
-nf .l. File
+
+
 entity MetadataGroup #8DE485 {
     id: INT
     key:TEXT
     value:TEXT
 }
 
-note "MetadataGroup is shared.\n Only one ref is not null\n See <b>0</b>,1 at the arrows" as n
-
-n .r. MetadataGroup
 
 entity Metadata #8DE485 {
     id: INT
