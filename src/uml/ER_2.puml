@@ -1,0 +1,60 @@
+@startuml
+entity User #7BE7B8 {
+    id:INT
+    nickname: TEXT
+    password: TEXT
+    email: TEXT
+    role: TEXT
+}
+
+entity Dataverse #53CC47 {
+    id: INT
+}
+  
+entity Dataset #53CC47 {
+    id: INT
+}
+
+note "same as file" as nds
+nds .. Dataset
+
+entity Access #53CC47 {
+    role: TEXT
+}
+
+
+entity File #8DE485 {
+    id: INT
+}
+
+note "role, filePath, fileUrl is metadata \ngrouped as MainFileOptions, for example" as nf
+
+nf .l. File
+entity MetadataGroup #8DE485 {
+    id: INT
+    key:TEXT
+    value:TEXT
+}
+
+note "MetadataGroup is shared.\n Only one ref is not null\n See <b>0</b>,1 at the arrows" as n
+
+n .r. MetadataGroup
+
+entity Metadata #8DE485 {
+    id: INT
+    key:TEXT
+    value:TEXT
+}
+  
+
+Access "0,*"-l-"1,1" User
+Access "0,*"-r-"1,1" Dataverse
+
+Dataverse "1,1"-r- "0,*" Dataset
+Dataset "1,1"--"0,*" File
+File "0,1"<--"0,*" MetadataGroup
+Dataset "0,1"<--"0,*" MetadataGroup
+Dataverse "0,1"<--"0,*" MetadataGroup
+
+Metadata "0,*" -l- "1,1" MetadataGroup
+@enduml
