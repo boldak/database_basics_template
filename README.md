@@ -1,6 +1,6 @@
 # DatAble - Data Able Source
 
-<p align="center">
+<p>
   <img src="src/logo.PNG">
 </p>
 
