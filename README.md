@@ -1,6 +1,8 @@
 # DatAble - Data Able Source
 
-![logo](src/logo.PNG)
+<p align="center">
+  <img src="src/logo.PNG">
+</p>
 
 DataAble - веб-сервіс для реалізації повного життєвого циклу даних.
 
