@@ -42,11 +42,11 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Acess`
+-- Table `mydb`.`Aсcess`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Acess` ;
+DROP TABLE IF EXISTS `mydb`.`Aсcess` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`Acess` (
+CREATE TABLE IF NOT EXISTS `mydb`.`Aсcess` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `User_id` INT NOT NULL,
   `Datavarse_id` INT NOT NULL,
