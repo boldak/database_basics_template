@@ -49,17 +49,17 @@ DROP TABLE IF EXISTS `mydb`.`Access` ;
 CREATE TABLE IF NOT EXISTS `mydb`.`Access` (
   `role` VARCHAR(45) NULL,
   `User_id` INT NOT NULL,
-  `Datavarse_id` INT NOT NULL,
-  PRIMARY KEY (`User_id`, `Datavarse_id`),
+  `Dataverse_id` INT NOT NULL,
+  PRIMARY KEY (`User_id`, `Dataverse_id`),
   INDEX `fk_Acess_User1_idx` (`User_id` ASC) VISIBLE,
-  INDEX `fk_Acess_Datavarse1_idx` (`Datavarse_id` ASC) VISIBLE,
+  INDEX `fk_Acess_Dataverse1_idx` (`Dataverse_id` ASC) VISIBLE,
   CONSTRAINT `fk_Acess_User1`
     FOREIGN KEY (`User_id`)
     REFERENCES `mydb`.`User` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Acess_Datavarse1`
-    FOREIGN KEY (`Datavarse_id`)
+  CONSTRAINT `fk_Acess_Dataverse1`
+    FOREIGN KEY (`Dataverse_id`)
     REFERENCES `mydb`.`Dataverse` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
