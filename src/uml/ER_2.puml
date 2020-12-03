@@ -24,6 +24,7 @@ entity Access #53CC47 {
 
 entity File #8DE485 {
     id: INT
+    content: TEXT
 }
 
 
