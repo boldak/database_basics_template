@@ -7,6 +7,7 @@ entity Dataset.id #B7FBB1
 
 entity File #8DE485
 entity File.id #B7FBB1
+entity File.content #B7FBB1
 
 entity MetadataGroup #8DE485
 entity MetadataGroup.id #B7FBB1
@@ -50,6 +51,7 @@ Metadata <-- Metadata.key
 Metadata <-- Metadata.value
 
 File <-- File.id
+File <-- File.content
 
 Dataset <-- Dataset.id
 Dataset "1,1"--"0,*" File
