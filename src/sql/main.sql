@@ -92,13 +92,15 @@ DROP TABLE IF EXISTS `mydb`.`File` ;
 
 CREATE TABLE IF NOT EXISTS `mydb`.`File` (
   `id` INT NOT NULL AUTO_INCREMENT,
+  `content` VARCHAR(5000) NULL,
   `Dataset_id` INT NOT NULL,
   `Dataset_File_id` INT NOT NULL,
-  PRIMARY KEY (`id`, `Dataset_id`, `Dataset_File_id`),
-  INDEX `fk_File_Dataset1_idx` (`Dataset_id` ASC, `Dataset_File_id` ASC) VISIBLE,
+  `Dataset_Datavarse_id` INT NOT NULL,
+  PRIMARY KEY (`id`, `Dataset_id`, `Dataset_File_id`, `Dataset_Datavarse_id`),
+  INDEX `fk_File_Dataset1_idx` (`Dataset_id` ASC, `Dataset_File_id` ASC, `Dataset_Datavarse_id` ASC) VISIBLE,
   CONSTRAINT `fk_File_Dataset1`
-    FOREIGN KEY (`Dataset_id` , `Dataset_File_id`)
-    REFERENCES `mydb`.`Dataset` (`id` , `File_id`)
+    FOREIGN KEY (`Dataset_id` , `Dataset_File_id` , `Dataset_Datavarse_id`)
+    REFERENCES `mydb`.`Dataset` (`id` , `File_id` , `Datavarse_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -118,15 +120,14 @@ CREATE TABLE IF NOT EXISTS `mydb`.`MetadataGroup` (
   `Dataset_File_id` INT NOT NULL,
   `Dataset_Datavarse_id` INT NOT NULL,
   `Datavarse_id` INT NOT NULL,
-  PRIMARY KEY (`id`, `File_id`, `Dataset_id`, `Dataset_File_id`, `Dataset_Datavarse_id`, `Datavarse_id`),
-  INDEX `fk_MetadataGroup_File1_idx` (`File_id` ASC) VISIBLE,
+  `File_id1` INT NOT NULL,
+  `File_Dataset_id` INT NOT NULL,
+  `File_Dataset_File_id` INT NOT NULL,
+  `File_Dataset_Datavarse_id` INT NOT NULL,
+  PRIMARY KEY (`id`, `File_id`, `Dataset_id`, `Dataset_File_id`, `Dataset_Datavarse_id`, `Datavarse_id`, `File_id1`, `File_Dataset_id`, `File_Dataset_File_id`, `File_Dataset_Datavarse_id`),
   INDEX `fk_MetadataGroup_Dataset1_idx` (`Dataset_id` ASC, `Dataset_File_id` ASC, `Dataset_Datavarse_id` ASC) VISIBLE,
   INDEX `fk_MetadataGroup_Datavarse1_idx` (`Datavarse_id` ASC) VISIBLE,
-  CONSTRAINT `fk_MetadataGroup_File1`
-    FOREIGN KEY (`File_id`)
-    REFERENCES `mydb`.`File` (`id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
+  INDEX `fk_MetadataGroup_File1_idx` (`File_id1` ASC, `File_Dataset_id` ASC, `File_Dataset_File_id` ASC, `File_Dataset_Datavarse_id` ASC) VISIBLE,
   CONSTRAINT `fk_MetadataGroup_Dataset1`
     FOREIGN KEY (`Dataset_id` , `Dataset_File_id` , `Dataset_Datavarse_id`)
     REFERENCES `mydb`.`Dataset` (`id` , `File_id` , `Datavarse_id`)
@@ -135,6 +136,11 @@ CREATE TABLE IF NOT EXISTS `mydb`.`MetadataGroup` (
   CONSTRAINT `fk_MetadataGroup_Datavarse1`
     FOREIGN KEY (`Datavarse_id`)
     REFERENCES `mydb`.`Datavarse` (`id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_MetadataGroup_File1`
+    FOREIGN KEY (`File_id1` , `File_Dataset_id` , `File_Dataset_File_id` , `File_Dataset_Datavarse_id`)
+    REFERENCES `mydb`.`File` (`id` , `Dataset_id` , `Dataset_File_id` , `Dataset_Datavarse_id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
