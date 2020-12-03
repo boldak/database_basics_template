@@ -42,23 +42,24 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Aсcess`
+-- Table `mydb`.`Acess`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Aсcess` ;
+DROP TABLE IF EXISTS `mydb`.`Acess` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`Aсcess` (
-  `role` VARCHAR(45) NULL,
+CREATE TABLE IF NOT EXISTS `mydb`.`Acess` (
+  `id` INT NOT NULL AUTO_INCREMENT,
   `User_id` INT NOT NULL,
-  `Dataverse_id` INT NOT NULL,
-  PRIMARY KEY (`User_id`, `Dataverse_id`),
-  INDEX `fk_Aсcess_Dataverse1_idx` (`Dataverse_id` ASC) VISIBLE,
-  CONSTRAINT `fk_Aсcess_User1`
+  `Datavarse_id` INT NOT NULL,
+  PRIMARY KEY (`id`, `User_id`, `Datavarse_id`),
+  INDEX `fk_Acess_User1_idx` (`User_id` ASC) VISIBLE,
+  INDEX `fk_Acess_Datavarse1_idx` (`Datavarse_id` ASC) VISIBLE,
+  CONSTRAINT `fk_Acess_User1`
     FOREIGN KEY (`User_id`)
     REFERENCES `mydb`.`User` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Aсcess_Dataverse1`
-    FOREIGN KEY (`Dataverse_id`)
+  CONSTRAINT `fk_Acess_Datavarse1`
+    FOREIGN KEY (`Datavarse_id`)
     REFERENCES `mydb`.`Dataverse` (`id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
@@ -90,7 +91,6 @@ DROP TABLE IF EXISTS `mydb`.`File` ;
 
 CREATE TABLE IF NOT EXISTS `mydb`.`File` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `Filecol` VARCHAR(45) NULL,
   `content` VARCHAR(5000) NULL,
   `Dataset_id` INT NOT NULL,
   `Dataset_Dataverse_id` INT NOT NULL,
@@ -147,7 +147,7 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `mydb`.`Metadata` ;
 
 CREATE TABLE IF NOT EXISTS `mydb`.`Metadata` (
-  `idMetadata` INT NOT NULL AUTO_INCREMENT,
+  `id` INT NOT NULL AUTO_INCREMENT,
   `key` VARCHAR(255) NULL,
   `value` VARCHAR(3000) NULL,
   `MetadataGroup_id` INT NOT NULL,
@@ -157,7 +157,7 @@ CREATE TABLE IF NOT EXISTS `mydb`.`Metadata` (
   `MetadataGroup_Dataset_id` INT NOT NULL,
   `MetadataGroup_Dataset_Dataverse_id` INT NOT NULL,
   `MetadataGroup_Dataverse_id` INT NOT NULL,
-  PRIMARY KEY (`idMetadata`, `MetadataGroup_id`, `MetadataGroup_File_id`, `MetadataGroup_File_Dataset_id`, `MetadataGroup_File_Dataset_Dataverse_id`, `MetadataGroup_Dataset_id`, `MetadataGroup_Dataset_Dataverse_id`, `MetadataGroup_Dataverse_id`),
+  PRIMARY KEY (`id`, `MetadataGroup_id`, `MetadataGroup_File_id`, `MetadataGroup_File_Dataset_id`, `MetadataGroup_File_Dataset_Dataverse_id`, `MetadataGroup_Dataset_id`, `MetadataGroup_Dataset_Dataverse_id`, `MetadataGroup_Dataverse_id`),
   INDEX `fk_Metadata_MetadataGroup1_idx` (`MetadataGroup_id` ASC, `MetadataGroup_File_id` ASC, `MetadataGroup_File_Dataset_id` ASC, `MetadataGroup_File_Dataset_Dataverse_id` ASC, `MetadataGroup_Dataset_id` ASC, `MetadataGroup_Dataset_Dataverse_id` ASC, `MetadataGroup_Dataverse_id` ASC) VISIBLE,
   CONSTRAINT `fk_Metadata_MetadataGroup1`
     FOREIGN KEY (`MetadataGroup_id` , `MetadataGroup_File_id` , `MetadataGroup_File_Dataset_id` , `MetadataGroup_File_Dataset_Dataverse_id` , `MetadataGroup_Dataset_id` , `MetadataGroup_Dataset_Dataverse_id` , `MetadataGroup_Dataverse_id`)
