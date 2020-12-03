@@ -8,4 +8,4 @@
 
 ## Схема Бази Даних
 
-![BD-Schema](https://github.com/Vov11x/database_basics_template/blob/master/src/images/scheme.png)
+![BD-Schema](https://github.com/Vov11x/database_basics_template/blob/master/src/images/schema.png)
