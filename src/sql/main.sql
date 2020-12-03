@@ -162,3 +162,86 @@ ENGINE = InnoDB;
 SET SQL_MODE=@OLD_SQL_MODE;
 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+               
+               
+-- -----------------------------------------------------
+-- Data for table `mydb`.`user`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `mydb`;
+INSERT INTO `mydb`.`user` (`id`, `nickname`, `password`, `email`, `role`) VALUES (1, 'Владислав Брыль', '111', 'bril.vladislav@gmail.com', 'User');
+INSERT INTO `mydb`.`user` (`id`, `nickname`, `password`, `email`, `role`) VALUES (2, 'Александр Гонтеренко', '222', 'sanya2211@ukr.net', 'Admin');
+INSERT INTO `mydb`.`user` (`id`, `nickname`, `password`, `email`, `role`) VALUES (3, 'Роман Комаровский', '333', 'visibilis24@gmail.com', 'User');
+INSERT INTO `mydb`.`user` (`id`, `nickname`, `password`, `email`, `role`) VALUES (4, 'Егор Корякин', '444', 'egorkor4@gmail.com', 'User');
+INSERT INTO `mydb`.`user` (`id`, `nickname`, `password`, `email`, `role`) VALUES (5, 'Георгий Куцурайс', '555', 'gorik2001pro@gmail.com', 'User');
+INSERT INTO `mydb`.`user` (`id`, `nickname`, `password`, `email`, `role`) VALUES (6, 'Дмитрий Кучеренко', '666', 'jmalining@gmail.com', 'User');
+INSERT INTO `mydb`.`user` (`id`, `nickname`, `password`, `email`, `role`) VALUES (7, 'Май Тиен Ноанг', '777', 'tmai2218@gmail.com', 'User');
+INSERT INTO `mydb`.`user` (`id`, `nickname`, `password`, `email`, `role`) VALUES (8, 'Дмитрий Прокопчук', '888', 'prokopchuk.dimon111@gmail.com', 'User');
+               
+COMMIT;
+       
+               
+-- -----------------------------------------------------
+-- Data for table `mydb`.`dataverse`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `mydb`;
+INSERT INTO `mydb`.`dataverse` (`id`) VALUES (1);
+               
+COMMIT;
+               
+               
+-- -----------------------------------------------------
+-- Data for table `mydb`.`access`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `mydb`;
+INSERT INTO `mydb`.`access` (`role`, `User_id`, `Dataverse_id`) VALUES ('Admin', 2, 1);
+               
+COMMIT;
+               
+       
+-- -----------------------------------------------------
+-- Data for table `mydb`.`dataset`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `mydb`;
+INSERT INTO `mydb`.`dataset` (`id`, `Dataverse_id`) VALUES (1, 1);
+INSERT INTO `mydb`.`dataset` (`id`, `Dataverse_id`) VALUES (2, 1);
+INSERT INTO `mydb`.`dataset` (`id`, `Dataverse_id`) VALUES (3, 1);
+               
+COMMIT;
+
+
+-- -----------------------------------------------------
+-- Data for table `mydb`.`file`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `mydb`;
+INSERT INTO `mydb`.`file` (id, content, Dataset_id, Dataset_Dataverse_id) VALUES (1, 'Hello World in the first file!', 1, 1);
+INSERT INTO `mydb`.`file` (id, content, Dataset_id, Dataset_Dataverse_id) VALUES (2, 'Hello World in the second file!', 2, 1);
+INSERT INTO `mydb`.`file` (id, content, Dataset_id, Dataset_Dataverse_id) VALUES (3, 'Hello World in the third file!', 3, 1);
+               
+COMMIT;
+           
+               
+-- -----------------------------------------------------
+-- Data for table `mydb`.`metadata`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `mydb`;
+INSERT INTO `mydb`.`metadata` (`id`, `name`, `date`) VALUES (1, 'File 1', '2020-12-03');
+INSERT INTO `mydb`.`metadata` (`id`, `name`, `date`) VALUES (2, 'Dataset 1', '2020-12-03');
+               
+COMMIT;          
+               
+               
+-- -----------------------------------------------------
+-- Data for table `mydb`.`metadatagroup`
+-- -----------------------------------------------------
+START TRANSACTION;
+USE `mydb`;
+INSERT INTO `mydb`.`metadatagroup` (`id`, `File_id`, `File_Dataset_id`, `File_Dataset_Dataverse_id`, `Metadata_id`) VALUES (1, 1, 1, 1, 1);
+INSERT INTO `mydb`.`metadatagroup` (`id`, `Dataset_id`, `Dataset_Dataverse_id`, `Metadata_id`) VALUES (2, 1, 1, 2);
+               
+COMMIT;                 
