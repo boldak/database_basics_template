@@ -47,10 +47,10 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `mydb`.`Aсcess` ;
 
 CREATE TABLE IF NOT EXISTS `mydb`.`Aсcess` (
-  `id` INT NOT NULL AUTO_INCREMENT,
+  `role` VARCHAR(45) NULL,
   `User_id` INT NOT NULL,
   `Datavarse_id` INT NOT NULL,
-  PRIMARY KEY (`id`, `User_id`, `Datavarse_id`),
+  PRIMARY KEY (`User_id`, `Datavarse_id`),
   INDEX `fk_Acess_User1_idx` (`User_id` ASC) VISIBLE,
   INDEX `fk_Acess_Datavarse1_idx` (`Datavarse_id` ASC) VISIBLE,
   CONSTRAINT `fk_Acess_User1`
