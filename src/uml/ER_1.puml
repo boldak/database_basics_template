@@ -11,8 +11,6 @@ entity File.content #B7FBB1
 
 entity MetadataGroup #8DE485
 entity MetadataGroup.id #B7FBB1
-entity MetadataGroup.key #B7FBB1
-entity MetadataGroup.value #B7FBB1
 
 entity Metadata #8DE485
 entity Metadata.id #B7FBB1
@@ -38,8 +36,6 @@ Dataverse "1,1"--"0,*" Dataset
 
 
 MetadataGroup <-- MetadataGroup.id
-MetadataGroup <-- MetadataGroup.key
-MetadataGroup <-- MetadataGroup.value
 
 MetadataGroup "0,*"-l->"0,1" File
 MetadataGroup "0,*"-r->"0,1" Dataverse
