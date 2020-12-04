@@ -32,8 +32,6 @@ entity File #8DE485 {
 
 entity MetadataGroup #8DE485 {
     id: INT
-    key:TEXT
-    value:TEXT
 }
 
 
