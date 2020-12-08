@@ -1,6 +1,24 @@
 ![uml](http://www.plantuml.com/plantuml/png/ZLInZjD04Etz5QDhQ71ntEaEckWe-094ZQoBYqX9a6odGA98720D8YbG8j709wmiMpOcTdvXze-OMMzMPFSSvOgSDVlcpNjll7w8ao1APfEn5pmc7oAumf_OoZbMSY5JkSGCXLnTGH33kpYCF0_exuZSO8vxkSL6RXLwJjYKknN-zN0ocexY90e8RVKrAF0lTQLOOTsXfy7uOvnumCZkXmU2xtyQk5Gd5GrYUDUekIxlDHtG6Pp5uMCGXoJrDnRoXp7tbIIlbTotRzvVNrlONuHfKHpDOQdZ8vCW5rsYME2UymBCKV33Sw2Y0DMKQp1cr9tZ0TlkINu357rPowKHzC8MX0NX2iMxuY4b2cAjUB60jRjdmX2uFLNBUgYLpR4bfOBj_G7vcIcuO2JSd9VWMjiwmyJfs_6VlrkBV8VPCxd6aiXgKWZC8RzmH3Ih8MtV0GzgIifEYRxcek6xi_Wsc7MP4hPqrdtlJDTXikY6lRLc3djev1hKmdHAcd17cZXB-aUECm9M52KTKqW45pwBn8QzyAyP__9yiZsZLCXEfdhFlU_0vVj-vNdsXPtv0tCzxDhT4xLxksRCkhVLr-St_KUtlKSarley3FIrUGYdG_e4_WC0)
 
 
+***ID:*** RG.01
+
+***НАЗВА:*** Формування запиту на аналіз медіа-данних певної області
+
+***УЧАСНИКИ:*** Адміністратор, Замовник
+
+***ПЕРЕДУМОВИ:*** Наяваність сформованого технічного завдання
+
+***РЕЗУЛЬТАТ:*** Сформований запит та предмет дослідження нашою системою
+
+***ВИКЛЮЧНІ СИТУАЦІЇ:*** 
+- Відсутність Необхідної інформації
+- Некоректне сформоване технічне завдання (запит не відповідає можливостям системи, завдання є не точним, тощо)
+- Технічне завдання є некоректним з точки зору закону або етики
+
+***ОСНОВНИЙ СЦЕНАРІЙ:*** 
+![uml](http://www.plantuml.com/plantuml/png/dLFBpj9W4Dr_Jp4FGE9UDhoAYNX9L0pM7GjeDMX2m0KfAo4nFa2fr5PwuHNEl95d-8HG-Gd9lo0PPivbUgRjVGYU3OEFRz-u4LP8KA51YXe5zYDtdBcds23JCJBiaEXIaB2eD4QjiKuqv2ZH48sEDH8McNw6ZQQKoGGvyQbHKREzw3ewVRkbC38tQwBKXR1ZimBLYTqH_UIToESgXtzxLNGDnL3ybLJEDUfIwwU12Oq8PZdbP4zkIXIznTW69MN61Mo9WWjUHq6fDRQ4DzWIFATSUpcAOUSBy_rk8Uc4qz9dLflO1KZm0oinptiFSI-kDHCsmXywL7utGcO4Ci3ywDErL2zD3FgVKUSg7ykRy88gxJIGF2uZPAsCDZuIjlpYYzD16-6z9YnZ_U9PgHaGLf_V8hcNI_lq5A1YROuKAaI_igIne6Bn6oKDKX9C9Nx0x-er5ZkkmP6PXCvlHRBqzp-mcvCHcX45eYVsPFZ5wRabFWx3-afdLELNE7ZltF3rorU1l1WCWlxGkVwxv-Uwnp_yWFy2)
+
 
 ***ID:*** RG.02
 
