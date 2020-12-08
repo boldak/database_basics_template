@@ -5,4 +5,7 @@
 
 ### Модель бізнес-об'єктів
 ![uml](http://www.plantuml.com/plantuml/png/TP7DQiCm3CVlVegGKrlgihx0Q63NmHZiF4GiXZV77fQS4jZ33zf5SzJc-F-m-Kaw4KFcCWI3aJrFJTVtgKHMye03-A3DRo0wf-oqJmoCsWpfmqTjmWWCMRiv1Ndk8_JiHz5_ofW5MMDtGgxf6gj2GLH9nQc2YbKbmblxPePkhFrvL6jPJqpd1XyzSGPEUMvKA-aYX8duJl96UE_1lBINd3wnPrCRFHAXUty2XjbzXVDLc-eYIFIldv71NHhQKFhmXTEDDq8eQ4pTkPn0Fbasbvc4JRjvsE-shRNjvhW_Rjjgl2llRKFDkrAJ0wgyI44sjDOGbXD6LuRm2m00)
+
+### EER-модель
+![model](https://github.com/IWYFP/General/blob/main/Model.png?raw=true)
 =======
