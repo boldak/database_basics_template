@@ -16,29 +16,181 @@ CREATE SCHEMA IF NOT EXISTS `mydb` DEFAULT CHARACTER SET utf8 ;
 USE `mydb` ;
 
 -- -----------------------------------------------------
--- Table `mydb`.`Project`
+-- Table `mydb`.`BeatType`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Project` ;
+DROP TABLE IF EXISTS `mydb`.`BeatType` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`Project` (
+CREATE TABLE IF NOT EXISTS `mydb`.`BeatType` (
   `Id` INT NOT NULL,
+  `name` VARCHAR(100) NULL,
   PRIMARY KEY (`Id`))
 ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
--- Table `mydb`.`Metadata`
+-- Table `mydb`.`Access`
 -- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Metadata` ;
+DROP TABLE IF EXISTS `mydb`.`Access` ;
 
-CREATE TABLE IF NOT EXISTS `mydb`.`Metadata` (
-  `key` VARCHAR(45) NULL,
-  `value` VARCHAR(2500) NULL,
-  `Project_Id` INT NOT NULL,
-  INDEX `fk_Metadata_Project_idx` (`Project_Id` ASC) VISIBLE,
-  CONSTRAINT `fk_Metadata_Project`
-    FOREIGN KEY (`Project_Id`)
-    REFERENCES `mydb`.`Project` (`Id`)
+CREATE TABLE IF NOT EXISTS `mydb`.`Access` (
+  `role` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`role`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`Instrument`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`Instrument` ;
+
+CREATE TABLE IF NOT EXISTS `mydb`.`Instrument` (
+  `Id` INT NOT NULL,
+  `url` VARCHAR(300) NULL,
+  `name` VARCHAR(45) NULL,
+  `description` VARCHAR(200) NULL,
+  `openapi` VARCHAR(200) NULL,
+  PRIMARY KEY (`Id`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`Instruments`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`Instruments` ;
+
+CREATE TABLE IF NOT EXISTS `mydb`.`Instruments` (
+  `Id` INT NOT NULL,
+  `servicenode` INT NULL,
+  `next` INT NULL,
+  `Instruments_Id` INT NOT NULL,
+  `Instrument_Id` INT NOT NULL,
+  PRIMARY KEY (`Id`),
+  INDEX `fk_Instruments_Instruments1_idx` (`Instruments_Id` ASC) VISIBLE,
+  INDEX `fk_Instruments_Instrument1_idx` (`Instrument_Id` ASC) VISIBLE,
+  CONSTRAINT `fk_Instruments_Instruments1`
+    FOREIGN KEY (`Instruments_Id`)
+    REFERENCES `mydb`.`Instruments` (`Id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Instruments_Instrument1`
+    FOREIGN KEY (`Instrument_Id`)
+    REFERENCES `mydb`.`Instrument` (`Id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`ProcessedData`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`ProcessedData` ;
+
+CREATE TABLE IF NOT EXISTS `mydb`.`ProcessedData` (
+  `name` VARCHAR(200) NOT NULL,
+  `description` VARCHAR(500) NULL,
+  `Access_role` VARCHAR(100) NOT NULL,
+  `RawData_name` VARCHAR(200) NOT NULL,
+  PRIMARY KEY (`name`),
+  INDEX `fk_ProcessedData_Access1_idx` (`Access_role` ASC) VISIBLE,
+  INDEX `fk_ProcessedData_RawData1_idx` (`RawData_name` ASC) VISIBLE,
+  CONSTRAINT `fk_ProcessedData_Access1`
+    FOREIGN KEY (`Access_role`)
+    REFERENCES `mydb`.`Access` (`role`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_ProcessedData_RawData1`
+    FOREIGN KEY (`RawData_name`)
+    REFERENCES `mydb`.`RawData` (`name`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`RawData`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`RawData` ;
+
+CREATE TABLE IF NOT EXISTS `mydb`.`RawData` (
+  `name` VARCHAR(200) NOT NULL,
+  `description` VARCHAR(500) NULL,
+  `entrypoint` INT NULL,
+  `beats` VARCHAR(200) NULL,
+  `Instruments_Id` INT NOT NULL,
+  `ProcessedData_name` VARCHAR(200) NOT NULL,
+  `Access_role` VARCHAR(100) NOT NULL,
+  INDEX `fk_RawData_Instruments1_idx` (`Instruments_Id` ASC) VISIBLE,
+  PRIMARY KEY (`name`),
+  INDEX `fk_RawData_ProcessedData1_idx` (`ProcessedData_name` ASC) VISIBLE,
+  INDEX `fk_RawData_Access1_idx` (`Access_role` ASC) VISIBLE,
+  CONSTRAINT `fk_RawData_Instruments1`
+    FOREIGN KEY (`Instruments_Id`)
+    REFERENCES `mydb`.`Instruments` (`Id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_RawData_ProcessedData1`
+    FOREIGN KEY (`ProcessedData_name`)
+    REFERENCES `mydb`.`ProcessedData` (`name`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_RawData_Access1`
+    FOREIGN KEY (`Access_role`)
+    REFERENCES `mydb`.`Access` (`role`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`Beat`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`Beat` ;
+
+CREATE TABLE IF NOT EXISTS `mydb`.`Beat` (
+  `Id` INT NOT NULL,
+  `interval` INT NULL,
+  `source` VARCHAR(300) NULL,
+  `type` INT NULL,
+  `BeatType_Id` INT NOT NULL,
+  `Access_role` VARCHAR(100) NOT NULL,
+  `RawData_name` VARCHAR(200) NOT NULL,
+  PRIMARY KEY (`Id`),
+  INDEX `fk_Beat_BeatType1_idx` (`BeatType_Id` ASC) VISIBLE,
+  INDEX `fk_Beat_Access1_idx` (`Access_role` ASC) VISIBLE,
+  INDEX `fk_Beat_RawData1_idx` (`RawData_name` ASC) VISIBLE,
+  CONSTRAINT `fk_Beat_BeatType1`
+    FOREIGN KEY (`BeatType_Id`)
+    REFERENCES `mydb`.`BeatType` (`Id`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Beat_Access1`
+    FOREIGN KEY (`Access_role`)
+    REFERENCES `mydb`.`Access` (`role`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Beat_RawData1`
+    FOREIGN KEY (`RawData_name`)
+    REFERENCES `mydb`.`RawData` (`name`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `mydb`.`SourceData`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`SourceData` ;
+
+CREATE TABLE IF NOT EXISTS `mydb`.`SourceData` (
+  `Id` INT NOT NULL,
+  `url` VARCHAR(300) NULL,
+  `apikey` VARCHAR(300) NULL,
+  `Beat_Id` INT NOT NULL,
+  PRIMARY KEY (`Id`),
+  INDEX `fk_SourceData_Beat_idx` (`Beat_Id` ASC) VISIBLE,
+  CONSTRAINT `fk_SourceData_Beat`
+    FOREIGN KEY (`Beat_Id`)
+    REFERENCES `mydb`.`Beat` (`Id`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
@@ -50,73 +202,18 @@ ENGINE = InnoDB;
 DROP TABLE IF EXISTS `mydb`.`Account` ;
 
 CREATE TABLE IF NOT EXISTS `mydb`.`Account` (
-  `Id` INT NOT NULL,
-  `email` VARCHAR(45) NULL,
-  `loginl` VARCHAR(45) NULL,
+  `email` VARCHAR(45) NOT NULL,
+  `login` VARCHAR(45) NULL,
   `password` VARCHAR(45) NULL,
   `state` TINYINT NULL,
   `avatar` VARCHAR(300) NULL,
   `role` VARCHAR(45) NULL,
-  PRIMARY KEY (`Id`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `mydb`.`RawData`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`RawData` ;
-
-CREATE TABLE IF NOT EXISTS `mydb`.`RawData` (
-  `Id` INT NOT NULL,
-  `data` VARCHAR(2500) NULL,
-  PRIMARY KEY (`Id`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `mydb`.`ProcessedData`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`ProcessedData` ;
-
-CREATE TABLE IF NOT EXISTS `mydb`.`ProcessedData` (
-  `Id` INT NOT NULL,
-  `data` VARCHAR(2500) NULL,
-  PRIMARY KEY (`Id`))
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `mydb`.`Access`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Access` ;
-
-CREATE TABLE IF NOT EXISTS `mydb`.`Access` (
-  `Project_Id` INT NOT NULL,
-  `Account_Id` INT NOT NULL,
-  `Raw data_Id` INT NOT NULL,
-  `ProcessedData_Id` INT NOT NULL,
-  INDEX `fk_Access_Project1_idx` (`Project_Id` ASC) VISIBLE,
-  INDEX `fk_Access_Account1_idx` (`Account_Id` ASC) VISIBLE,
-  INDEX `fk_Access_Raw data1_idx` (`Raw data_Id` ASC) VISIBLE,
-  INDEX `fk_Access_ProcessedData1_idx` (`ProcessedData_Id` ASC) VISIBLE,
-  CONSTRAINT `fk_Access_Project1`
-    FOREIGN KEY (`Project_Id`)
-    REFERENCES `mydb`.`Project` (`Id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Access_Account1`
-    FOREIGN KEY (`Account_Id`)
-    REFERENCES `mydb`.`Account` (`Id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Access_Raw data1`
-    FOREIGN KEY (`Raw data_Id`)
-    REFERENCES `mydb`.`RawData` (`Id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION,
-  CONSTRAINT `fk_Access_ProcessedData1`
-    FOREIGN KEY (`ProcessedData_Id`)
-    REFERENCES `mydb`.`ProcessedData` (`Id`)
+  `Access_role` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`email`),
+  INDEX `fk_Account_Access1_idx` (`Access_role` ASC) VISIBLE,
+  CONSTRAINT `fk_Account_Access1`
+    FOREIGN KEY (`Access_role`)
+    REFERENCES `mydb`.`Access` (`role`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
