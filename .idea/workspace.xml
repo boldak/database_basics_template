@@ -19,16 +19,31 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="46bd907a-905b-443a-a2fb-d17a728c7178" name="Default Changelist" comment="" />
+    <list default="true" id="46bd907a-905b-443a-a2fb-d17a728c7178" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <favorite-branches>
+      <branch-storage>
+        <map>
+          <entry type="LOCAL">
+            <value>
+              <list>
+                <branch-info repo="$PROJECT_DIR$" source="MaiTien" />
+              </list>
+            </value>
+          </entry>
+        </map>
+      </branch-storage>
+    </favorite-branches>
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="MaiTien" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -69,5 +84,13 @@
       <screen x="0" y="40" width="1366" height="728" />
     </state>
     <state x="184" y="49" key="SettingsEditor/0.40.1366.728@0.40.1366.728" timestamp="1607533668606" />
+    <state x="275" y="137" key="Vcs.Push.Dialog.v2" timestamp="1607535466701">
+      <screen x="0" y="40" width="1366" height="728" />
+    </state>
+    <state x="275" y="137" key="Vcs.Push.Dialog.v2/0.40.1366.728@0.40.1366.728" timestamp="1607535466701" />
+    <state x="463" y="117" key="git4idea.branch.GitSmartOperationDialog" timestamp="1607535887016">
+      <screen x="0" y="40" width="1366" height="728" />
+    </state>
+    <state x="463" y="117" key="git4idea.branch.GitSmartOperationDialog/0.40.1366.728@0.40.1366.728" timestamp="1607535887016" />
   </component>
 </project>
