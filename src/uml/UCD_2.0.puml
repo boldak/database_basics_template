@@ -1,0 +1,19 @@
+@startuml
+package UCD_2.0 {
+        usecase "<b>UC_2</b>\nУправляти наборами\nданих" as UC_2 #aaeeaa
+    }
+
+    actor "Автор" as Author #eeee99
+    
+    usecase "<b>UC_2.1</b> \nСтворити набір данних" as UC_2.1
+    usecase "<b>UC_2.2</b> \nРедагувати набір данних" as UC_2.2
+    usecase "<b>UC_2.2.1</b> \nВидалити набір данних" as UC_2.2.1
+    usecase "<b>UC_2.2.2</b> \nВнести зміни до набору данних" as UC_2.2.2
+
+    Author -l-> UC_2
+    
+    UC_2.1 .u.> UC_2: extends
+    UC_2.2 .u.> UC_2: extends
+    UC_2.2.1 .u.> UC_2.2: extends
+    UC_2.2.2 .u.> UC_2.2: extends
+@enduml
