@@ -1,28 +1,19 @@
 const connection = require('../connection');
 const Sequilize = require('sequelize');
 
-const User = require('./user.js');
-const Project = require('./project.js');
+const Account = require('./account.js');
 
 class Access extends Sequilize.Model {}
 
 Access.init(
     {
-        id: {
-            type: Sequilize.INTEGER,
-            primaryKey: true
-        },
         role: {
             type: Sequilize.STRING(100),
+            primaryKey: true
+        },
+        account_role: {
+            type: Sequilize.STRING(45),
             allowNull: false
-        },
-        user_id: {
-            type: Sequilize.INTEGER,
-            allowNull: true
-        },
-        project_id: {
-            type: Sequilize.INTEGER,
-            allowNull: true
         }
     },
     {
@@ -32,15 +23,10 @@ Access.init(
     }
 );
 
-User.hasMany(Access);
-Project.hasMany(Access);
+Account.hasMany(Access);
 
-Access.belongsTo(User, {
-    foreignKey: 'user_id'
-});
-
-Access.belongsTo(Project, {
-    foreignKey: 'project_id'
+Access.belongsTo(Account, {
+    foreignKey: 'account_role'
 });
 
 module.exports = Access

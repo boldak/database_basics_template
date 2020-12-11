@@ -28,13 +28,36 @@ ENGINE = InnoDB;
 
 
 -- -----------------------------------------------------
+-- Table `mydb`.`Account`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `mydb`.`Account` ;
+
+CREATE TABLE IF NOT EXISTS `mydb`.`Account` (
+  `role` VARCHAR(45) NOT NULL,
+  `email` VARCHAR(45) NULL,
+  `login` VARCHAR(45) NULL,
+  `password` VARCHAR(45) NULL,
+  `state` TINYINT NULL,
+  `avatar` VARCHAR(300) NULL,
+  PRIMARY KEY (`role`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
 -- Table `mydb`.`Access`
 -- -----------------------------------------------------
 DROP TABLE IF EXISTS `mydb`.`Access` ;
 
 CREATE TABLE IF NOT EXISTS `mydb`.`Access` (
   `role` VARCHAR(100) NOT NULL,
-  PRIMARY KEY (`role`))
+  `Account_role` VARCHAR(45) NOT NULL,
+  PRIMARY KEY (`role`),
+  INDEX `fk_Access_Account1_idx` (`Account_role` ASC) VISIBLE,
+  CONSTRAINT `fk_Access_Account1`
+    FOREIGN KEY (`Account_role`)
+    REFERENCES `mydb`.`Account` (`role`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
 ENGINE = InnoDB;
 
 
@@ -191,29 +214,6 @@ CREATE TABLE IF NOT EXISTS `mydb`.`SourceData` (
   CONSTRAINT `fk_SourceData_Beat`
     FOREIGN KEY (`Beat_Id`)
     REFERENCES `mydb`.`Beat` (`Id`)
-    ON DELETE NO ACTION
-    ON UPDATE NO ACTION)
-ENGINE = InnoDB;
-
-
--- -----------------------------------------------------
--- Table `mydb`.`Account`
--- -----------------------------------------------------
-DROP TABLE IF EXISTS `mydb`.`Account` ;
-
-CREATE TABLE IF NOT EXISTS `mydb`.`Account` (
-  `email` VARCHAR(45) NOT NULL,
-  `login` VARCHAR(45) NULL,
-  `password` VARCHAR(45) NULL,
-  `state` TINYINT NULL,
-  `avatar` VARCHAR(300) NULL,
-  `role` VARCHAR(45) NULL,
-  `Access_role` VARCHAR(100) NOT NULL,
-  PRIMARY KEY (`email`),
-  INDEX `fk_Account_Access1_idx` (`Access_role` ASC) VISIBLE,
-  CONSTRAINT `fk_Account_Access1`
-    FOREIGN KEY (`Access_role`)
-    REFERENCES `mydb`.`Access` (`role`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB;
