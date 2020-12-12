@@ -1,3 +1,3 @@
 const Sequilize = require('sequelize');
 
-module.exports = new Sequilize(require('../../config/db'))
+module.exports = new Sequilize(require('../../config/database'))
